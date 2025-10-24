@@ -1,10 +1,11 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { APP_TITLE } from "@/const";
-import { Briefcase, DollarSign, ExternalLink, MapPin, Search } from "lucide-react";
+import { Briefcase, DollarSign, Download, ExternalLink, Eye, MapPin, Search } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface Job {
@@ -21,6 +22,9 @@ interface Job {
   benefits: string[];
   applyUrl: string;
   category: string;
+  resumeFile: string;
+  coverLetterFile: string;
+  recommendationLetter: string;
 }
 
 export default function Home() {
@@ -30,6 +34,15 @@ export default function Home() {
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [jobTypeFilter, setJobTypeFilter] = useState("all");
   const [loading, setLoading] = useState(true);
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewUrl, setPreviewUrl] = useState("");
+  const [previewTitle, setPreviewTitle] = useState("");
+
+  const handlePreview = (url: string, title: string) => {
+    setPreviewUrl(url);
+    setPreviewTitle(title);
+    setPreviewOpen(true);
+  };
 
   useEffect(() => {
     // Fetch jobs data
@@ -287,8 +300,58 @@ export default function Home() {
                       )}
                     </CardContent>
 
-                    <CardFooter>
-                      <Button asChild className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700">
+                    <CardFooter className="flex flex-col gap-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full">
+                        <div className="flex flex-col gap-1">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => handlePreview(job.resumeFile, `Resume - ${job.title}`)}
+                          >
+                            <Eye className="w-4 h-4 mr-2" />
+                            View Resume
+                          </Button>
+                          <Button asChild variant="ghost" size="sm">
+                            <a href={job.resumeFile} download className="text-xs">
+                              <Download className="w-3 h-3 mr-1" />
+                              Download
+                            </a>
+                          </Button>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => handlePreview(job.coverLetterFile, `Cover Letter - ${job.title}`)}
+                          >
+                            <Eye className="w-4 h-4 mr-2" />
+                            View Cover Letter
+                          </Button>
+                          <Button asChild variant="ghost" size="sm">
+                            <a href={job.coverLetterFile} download className="text-xs">
+                              <Download className="w-3 h-3 mr-1" />
+                              Download
+                            </a>
+                          </Button>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => handlePreview(job.recommendationLetter, "Letter of Recommendation")}
+                          >
+                            <Eye className="w-4 h-4 mr-2" />
+                            View Recommendation
+                          </Button>
+                          <Button asChild variant="ghost" size="sm">
+                            <a href={job.recommendationLetter} download className="text-xs">
+                              <Download className="w-3 h-3 mr-1" />
+                              Download
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                      <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
                         <a href={job.applyUrl} target="_blank" rel="noopener noreferrer">
                           Apply Now
                           <ExternalLink className="w-4 h-4 ml-2" />
@@ -302,6 +365,38 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      {/* Preview Dialog */}
+      <Dialog open={previewOpen} onOpenChange={setPreviewOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>{previewTitle}</DialogTitle>
+            <DialogDescription>
+              Preview document - Click download to save a copy
+            </DialogDescription>
+          </DialogHeader>
+          <div className="mt-4">
+            {previewUrl && (
+              <iframe
+                src={previewUrl}
+                className="w-full h-[70vh] border rounded-lg"
+                title="Document Preview"
+              />
+            )}
+          </div>
+          <div className="flex justify-end gap-2 mt-4">
+            <Button variant="outline" onClick={() => setPreviewOpen(false)}>
+              Close
+            </Button>
+            <Button asChild>
+              <a href={previewUrl} download>
+                <Download className="w-4 h-4 mr-2" />
+                Download
+              </a>
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 mt-12">
