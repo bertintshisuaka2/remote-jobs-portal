@@ -1,0 +1,579 @@
+[
+  {
+    "id": 1,
+    "title": "WordPress Developer",
+    "company": "Astyra Corporation",
+    "location": "Raleigh, NC (Remote)",
+    "salary": "$41 - $43 per hour",
+    "jobType": "Contract",
+    "posted": "New",
+    "description": "The client has an URGENT/IMMEDIATE need for a PHP and WordPress Developer to get their website up and running again. Candidates need to be available immediately for the duration of the engagement.",
+    "responsibilities": [
+      "Website Access Restoration: Diagnose and repair issues related to the missing WordPress login PHP file",
+      "Static Pages Restoration: Diagnose and repair issues related to the inability to make live changes",
+      "Codebase Stabilization: Identify problematic custom PHP code, outdated plugins and legacy configurations",
+      "Content Management Support: Make minor updates to improve navigation and usability",
+      "Short-Term Maintenance Recommendations: Provide guidance on maintaining the website's operability",
+      "Documentation: Document any repairs, temporary fixes or recommendations"
+    ],
+    "requirements": [
+      "Extensive experience with PHP Development - 5 Years Required",
+      "Experience with WordPress Development - 5 Years Required",
+      "Experience reviewing existing code to diagnose and repair issues - 5 Years Required",
+      "Experience restoring login functionality for administrative access - 5 Years Required",
+      "Identify problematic custom PHP code, outdated plugins, and legacy configurations - 5 Years Required"
+    ],
+    "benefits": [
+      "401(k)",
+      "Dental insurance",
+      "Health insurance",
+      "Vision insurance"
+    ],
+    "applyUrl": "https://www.indeed.com/viewjob?jk=23b5e8d7d6b0e2b7",
+    "category": "Full Stack Developer"
+  },
+  {
+    "id": 2,
+    "title": "AWS Cloud Native Developer",
+    "company": "Cook Systems",
+    "location": "Atlanta, GA (Remote)",
+    "salary": "Pay information not provided",
+    "jobType": "Full-time",
+    "posted": "New",
+    "description": "Collaborating in a SCRUM Agile environment, you'll deliver high-quality software solutions that meet business objectives.",
+    "responsibilities": [
+      "Deliver high-quality software solutions in SCRUM Agile environment",
+      "Collaborate with cross-functional teams",
+      "Develop cloud-native applications on AWS platform"
+    ],
+    "requirements": [
+      "AWS Certified Developer - Associate certification preferred",
+      "Experience with XML",
+      "Bachelor's degree preferred"
+    ],
+    "benefits": [
+      "401(k)",
+      "Health insurance",
+      "Vision insurance",
+      "Dental insurance",
+      "Flexible spending account"
+    ],
+    "applyUrl": "https://www.indeed.com/viewjob?jk=de54f4c17af6f86d",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 3,
+    "title": "Software Engineer I",
+    "company": "Onward Search",
+    "location": "Costa Mesa, CA (Remote)",
+    "salary": "$50 - $51 per hour",
+    "jobType": "Contract",
+    "posted": "Recent",
+    "description": "This is a 6-month contract with potential for extension. You'll gain hands-on experience with a modern Scala stack and collaborate on the development of scalable applications.",
+    "responsibilities": [
+      "Develop applications using Scala stack",
+      "Collaborate on scalable application development",
+      "Work on 6-month contract with extension potential"
+    ],
+    "requirements": [
+      "Experience with Scala programming",
+      "Software development experience",
+      "Ability to work remotely"
+    ],
+    "benefits": [
+      "Tuition reimbursement",
+      "401(k)",
+      "Health insurance",
+      "Vision insurance",
+      "Dental insurance",
+      "Life insurance"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 4,
+    "title": "Senior Software Engineer, Supply Chain (Odoo/Python)",
+    "company": "Eaze Inc. - Corporate",
+    "location": "Remote",
+    "salary": "$120,000 - $180,000 per year",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "Eaze is a cannabis delivery platform and retail marketplace that connects adult consumers with licensed dispensaries and products. Join our team to build supply chain solutions.",
+    "responsibilities": [
+      "Develop supply chain management solutions using Odoo/Python",
+      "Build and maintain cannabis delivery platform features",
+      "Collaborate with cross-functional teams"
+    ],
+    "requirements": [
+      "Strong Python programming skills",
+      "Experience with Odoo framework",
+      "Supply chain management knowledge preferred"
+    ],
+    "benefits": [
+      "401(k)",
+      "Health insurance",
+      "Paid time off",
+      "Vision insurance",
+      "Dental insurance",
+      "Opportunities for advancement"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 5,
+    "title": "AWS DevOps Engineer",
+    "company": "Eduphoria",
+    "location": "Remote",
+    "salary": "$110,000 - $125,000 per year",
+    "jobType": "Full-time",
+    "posted": "New",
+    "description": "We're a Texas-based company that loves making powerful and intuitive web-based software for K-12 educators so they can focus on spending more time with their students.",
+    "responsibilities": [
+      "Manage AWS cloud infrastructure",
+      "Implement DevOps best practices",
+      "Support K-12 education software platform"
+    ],
+    "requirements": [
+      "AWS experience required",
+      "DevOps methodology knowledge",
+      "Experience with CI/CD pipelines"
+    ],
+    "benefits": [
+      "Paid parental leave",
+      "Parental leave",
+      "401(k)",
+      "Health insurance",
+      "401(k) matching",
+      "Paid time off"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 6,
+    "title": "Lead DevOps Engineer",
+    "company": "Tenna",
+    "location": "Remote",
+    "salary": "Pay information not provided",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "We provide innovative solutions to customers looking for competitive ways to better manage and track their assets, such as heavy and light equipment, large and small tools.",
+    "responsibilities": [
+      "Lead DevOps initiatives",
+      "Manage infrastructure and deployment pipelines",
+      "Mentor junior engineers"
+    ],
+    "requirements": [
+      "Senior-level DevOps experience",
+      "Leadership skills",
+      "Cloud infrastructure expertise"
+    ],
+    "benefits": [
+      "Referral program",
+      "401(k) matching",
+      "Paid time off",
+      "Flexible spending account",
+      "Volunteer time off"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 7,
+    "title": "Staff Software Systems Engineer, Behavior Validation",
+    "company": "General Motors",
+    "location": "Remote",
+    "salary": "$165,000 - $253,200 per year",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "You will leverage your experience designing and implementing complex V&V strategies to quickly prototype, gain consensus, and move our programs forward with confidence.",
+    "responsibilities": [
+      "Design and implement validation strategies",
+      "Prototype complex systems",
+      "Lead validation initiatives for automotive software"
+    ],
+    "requirements": [
+      "Staff-level software engineering experience",
+      "Validation and verification expertise",
+      "Automotive software experience preferred"
+    ],
+    "benefits": [
+      "Tuition reimbursement",
+      "Health insurance",
+      "Retirement plan",
+      "Vision insurance",
+      "Health savings account",
+      "Dental insurance"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 8,
+    "title": "Senior Software Engineer, Behavior Validation",
+    "company": "General Motors",
+    "location": "Remote in California",
+    "salary": "Pay information not provided",
+    "jobType": "Full-time",
+    "posted": "New",
+    "description": "Facilitate cross-team collaboration to establish coding best practices for the Software Validation Organization.",
+    "responsibilities": [
+      "Establish coding best practices",
+      "Facilitate cross-team collaboration",
+      "Lead validation efforts"
+    ],
+    "requirements": [
+      "Senior software engineering experience",
+      "Strong coding standards knowledge",
+      "Collaboration and leadership skills"
+    ],
+    "benefits": [
+      "Benefits from day one"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 9,
+    "title": "Software Engineer (React)",
+    "company": "True Rx Health Strategists",
+    "location": "Remote in Indiana",
+    "salary": "Pay information not provided",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "This is your chance to make an impact by building scalable applications, enhancing digital transformation initiatives, and collaborating with top talent in a dynamic environment.",
+    "responsibilities": [
+      "Build scalable React applications",
+      "Enhance digital transformation initiatives",
+      "Collaborate with cross-functional teams"
+    ],
+    "requirements": [
+      "Strong React.js experience",
+      "Full stack development skills",
+      "Healthcare industry experience preferred"
+    ],
+    "benefits": [
+      "Flextime",
+      "Health insurance",
+      "401(k) matching",
+      "Paid time off",
+      "Vision insurance",
+      "Health savings account"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Full Stack Developer"
+  },
+  {
+    "id": 10,
+    "title": "Senior Golang Software Engineer",
+    "company": "Credit Acceptance",
+    "location": "Remote",
+    "salary": "$130,047 - $190,736 per year",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "Author, apply and advocate for team coding, documenting and testing standards. Design and develop software and improve existing code to make it more efficient.",
+    "responsibilities": [
+      "Author and advocate for coding standards",
+      "Design and develop Golang applications",
+      "Improve existing code efficiency",
+      "Establish testing standards"
+    ],
+    "requirements": [
+      "Senior-level Golang experience",
+      "Strong software architecture skills",
+      "Testing and documentation expertise"
+    ],
+    "benefits": [
+      "Tuition reimbursement",
+      "Parental leave",
+      "Health insurance",
+      "401(k) matching",
+      "Vision insurance",
+      "Dental insurance"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 11,
+    "title": "Application Support Developer",
+    "company": "Symmetry Lending",
+    "location": "Remote",
+    "salary": "$115,000 - $145,000 per year",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "This is a production support-focused role responsible for resolving incidents, developing small enhancements, and maintaining application stability.",
+    "responsibilities": [
+      "Resolve production incidents",
+      "Develop small enhancements",
+      "Maintain application stability",
+      "Provide on-call support"
+    ],
+    "requirements": [
+      "Application support experience",
+      "Strong troubleshooting skills",
+      "Development background"
+    ],
+    "benefits": [
+      "401(k)",
+      "Health insurance",
+      "401(k) matching",
+      "Paid time off",
+      "Vision insurance",
+      "Health savings account"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 12,
+    "title": "Senior Software Engineer",
+    "company": "General Motors",
+    "location": "Remote",
+    "salary": "$134,000 - $235,900 per year",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "Develop the first layers of software on the car, from interfacing with hardware, to moving large amounts of data up the software stack.",
+    "responsibilities": [
+      "Develop automotive software layers",
+      "Interface with hardware systems",
+      "Manage data flow in software stack"
+    ],
+    "requirements": [
+      "Senior software engineering experience",
+      "Embedded systems knowledge",
+      "Automotive software experience"
+    ],
+    "benefits": [
+      "Tuition reimbursement",
+      "Health insurance",
+      "Retirement plan",
+      "Vision insurance",
+      "Health savings account",
+      "Dental insurance"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 13,
+    "title": "Oracle CPQ Developer - Remote",
+    "company": "NTT DATA",
+    "location": "Remote in Chicago, IL",
+    "salary": "$86,040 - $179,250 per year",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "Participate in the hands-on build of the designed solution. Ensure all solutions are built to scale and work across various product lines.",
+    "responsibilities": [
+      "Build Oracle CPQ solutions",
+      "Ensure scalability across product lines",
+      "Hands-on development and implementation"
+    ],
+    "requirements": [
+      "Oracle CPQ experience",
+      "Configure, Price, Quote expertise",
+      "Enterprise software development"
+    ],
+    "benefits": [
+      "Competitive benefits package"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 14,
+    "title": "Senior Java Software Engineer",
+    "company": "Bellwood Labs",
+    "location": "Remote",
+    "salary": "$110,000 - $135,000 per year",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "We are seeking a Senior Java Software Engineer to build and scale business-critical web products. Essential skills: Deep experience with Java / Spring Boot.",
+    "responsibilities": [
+      "Build business-critical web products",
+      "Scale Java applications",
+      "Work with Spring Boot framework"
+    ],
+    "requirements": [
+      "Deep experience with Java / Spring Boot",
+      "C# experience beneficial",
+      "Enterprise application development"
+    ],
+    "benefits": [
+      "401(k)",
+      "Health insurance",
+      "Paid time off",
+      "Vision insurance",
+      "Dental insurance",
+      "Disability insurance"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 15,
+    "title": "Oracle CPQ Developer",
+    "company": "Russ Hadick & Associates, Inc.",
+    "location": "Remote",
+    "salary": "$50 - $78 per hour",
+    "jobType": "Full-time, Contract to Hire",
+    "posted": "Recent",
+    "description": "NO C2C, MUST Work on W2, 6 Month Contract to hire. An Oracle CPQ Developer is responsible for designing, developing, and implementing Oracle Configure, Price, Quote solutions.",
+    "responsibilities": [
+      "Design and develop Oracle CPQ solutions",
+      "Implement Configure, Price, Quote functionality",
+      "Work on 6-month contract to hire basis"
+    ],
+    "requirements": [
+      "Oracle CPQ development experience",
+      "Must work on W2 (no C2C)",
+      "Minimum 40 hours per week availability"
+    ],
+    "benefits": [
+      "401(k)",
+      "Health insurance",
+      "Vision insurance",
+      "Dental insurance",
+      "Life insurance"
+    ],
+    "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
+    "category": "Software Engineer"
+  },
+  {
+    "id": 16,
+    "title": "Full-Stack Engineer",
+    "company": "Campfire",
+    "location": "San Francisco, CA (Remote)",
+    "salary": "Competitive",
+    "jobType": "Full-time",
+    "posted": "5 months ago",
+    "description": "Join our team to build innovative full-stack solutions. Actively hiring talented engineers.",
+    "responsibilities": [
+      "Develop full-stack applications",
+      "Work with modern web technologies",
+      "Collaborate with product team"
+    ],
+    "requirements": [
+      "Full-stack development experience",
+      "Modern JavaScript frameworks",
+      "Backend development skills"
+    ],
+    "benefits": [
+      "Competitive compensation",
+      "Remote work flexibility",
+      "Innovative work environment"
+    ],
+    "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
+    "category": "Full Stack Developer"
+  },
+  {
+    "id": 17,
+    "title": "Full-Stack Software Engineer (L4), Revenue & Growth Tools Team",
+    "company": "Netflix",
+    "location": "United States (Remote)",
+    "salary": "Competitive",
+    "jobType": "Full-time",
+    "posted": "1 day ago",
+    "description": "Join Netflix's Revenue & Growth Tools Team to build systems that power our global streaming service. Actively hiring.",
+    "responsibilities": [
+      "Build revenue and growth tools",
+      "Develop scalable full-stack solutions",
+      "Work on Netflix's global platform"
+    ],
+    "requirements": [
+      "L4 level software engineering experience",
+      "Full-stack development expertise",
+      "Experience with large-scale systems"
+    ],
+    "benefits": [
+      "Competitive Netflix compensation",
+      "Remote work options",
+      "World-class team environment"
+    ],
+    "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
+    "category": "Full Stack Developer"
+  },
+  {
+    "id": 18,
+    "title": "Remote Full Stack Developer",
+    "company": "FreeUp",
+    "location": "St. Petersburg, FL (Remote)",
+    "salary": "Competitive",
+    "jobType": "Full-time",
+    "posted": "10 months ago",
+    "description": "Work remotely as a full stack developer building modern web applications.",
+    "responsibilities": [
+      "Develop full-stack web applications",
+      "Work with modern tech stack",
+      "Remote collaboration"
+    ],
+    "requirements": [
+      "Full-stack development experience",
+      "Strong front-end and back-end skills",
+      "Remote work experience"
+    ],
+    "benefits": [
+      "Fully remote position",
+      "Flexible work environment"
+    ],
+    "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
+    "category": "Full Stack Developer"
+  },
+  {
+    "id": 19,
+    "title": "Front-End Engineer (React Web)",
+    "company": "Backpack",
+    "location": "United States (Remote)",
+    "salary": "Competitive",
+    "jobType": "Full-time",
+    "posted": "3 months ago",
+    "description": "Build beautiful and responsive React web applications for our users.",
+    "responsibilities": [
+      "Develop React web applications",
+      "Create responsive user interfaces",
+      "Collaborate with design team"
+    ],
+    "requirements": [
+      "Strong React.js experience",
+      "Front-end development expertise",
+      "UI/UX sensibility"
+    ],
+    "benefits": [
+      "Remote work",
+      "Competitive compensation",
+      "Modern tech stack"
+    ],
+    "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
+    "category": "Full Stack Developer"
+  },
+  {
+    "id": 20,
+    "title": "Front-End Developer - React",
+    "company": "Lensa",
+    "location": "Remote",
+    "salary": "Competitive",
+    "jobType": "Full-time",
+    "posted": "Recent",
+    "description": "Join our team to build cutting-edge React applications.",
+    "responsibilities": [
+      "Develop React applications",
+      "Implement modern front-end solutions",
+      "Work with cross-functional teams"
+    ],
+    "requirements": [
+      "React development experience",
+      "Modern JavaScript knowledge",
+      "Front-end best practices"
+    ],
+    "benefits": [
+      "Remote position",
+      "Competitive salary",
+      "Growth opportunities"
+    ],
+    "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
+    "category": "Full Stack Developer"
+  }
+]
+
