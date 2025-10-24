@@ -5,8 +5,9 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { APP_TITLE } from "@/const";
-import { Briefcase, DollarSign, Download, ExternalLink, Eye, MapPin, Search } from "lucide-react";
+import { Briefcase, DollarSign, Download, ExternalLink, Eye, FileText, MapPin, Search } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "wouter";
 
 interface Job {
   id: number;
@@ -100,10 +101,19 @@ export default function Home() {
                 <p className="text-sm text-gray-600">Find Your Dream Remote Tech Job</p>
               </div>
             </div>
-            <div className="hidden md:flex items-center gap-2 text-sm text-gray-600">
-              <Badge variant="secondary" className="bg-blue-100 text-blue-700 hover:bg-blue-200">
-                {jobs.length} Jobs Available
-              </Badge>
+            <div className="flex items-center gap-3">
+              <Button asChild variant="outline" size="sm">
+                <Link href="/documents">
+                  <FileText className="w-4 h-4 mr-2" />
+                  <span className="hidden sm:inline">All Documents</span>
+                  <span className="sm:hidden">Docs</span>
+                </Link>
+              </Button>
+              <div className="hidden md:flex items-center gap-2 text-sm text-gray-600">
+                <Badge variant="secondary" className="bg-blue-100 text-blue-700 hover:bg-blue-200">
+                  {jobs.length} Jobs Available
+                </Badge>
+              </div>
             </div>
           </div>
         </div>
