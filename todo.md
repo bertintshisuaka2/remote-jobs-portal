@@ -16,4 +16,5 @@
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page
 - [x] Fix PDF preview not opening when clicking Preview PDF button
+- [x] Fix file paths - preview and download buttons not working
 

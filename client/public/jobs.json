@@ -30,7 +30,10 @@
       "Vision insurance"
     ],
     "applyUrl": "https://www.indeed.com/viewjob?jk=23b5e8d7d6b0e2b7",
-    "category": "Full Stack Developer"
+    "category": "Full Stack Developer",
+    "resumeFile": "/resumes/01_Astyra_Corporation_WordPress_Developer.pdf",
+    "coverLetterFile": "/cover_letters/01_Astyra_Corporation_WordPress_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 2,
@@ -59,7 +62,10 @@
       "Flexible spending account"
     ],
     "applyUrl": "https://www.indeed.com/viewjob?jk=de54f4c17af6f86d",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/02_Cook_Systems_AWS_Cloud_Native_Developer.pdf",
+    "coverLetterFile": "/cover_letters/02_Cook_Systems_AWS_Cloud_Native_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 3,
@@ -89,7 +95,10 @@
       "Life insurance"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/03_Onward_Search_Software_Engineer_I.pdf",
+    "coverLetterFile": "/cover_letters/03_Onward_Search_Software_Engineer_I_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 4,
@@ -119,7 +128,10 @@
       "Opportunities for advancement"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/04_Eaze_Inc._-_Corporate_Senior_Software_Engineer,_Supply_Chain_(Odoo_Python).pdf",
+    "coverLetterFile": "/cover_letters/04_Eaze_Inc._-_Corporate_Senior_Software_Engineer,_Supply_Chain_(Odoo_Python)_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 5,
@@ -149,7 +161,10 @@
       "Paid time off"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/05_Eduphoria_AWS_DevOps_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/05_Eduphoria_AWS_DevOps_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 6,
@@ -178,7 +193,10 @@
       "Volunteer time off"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/06_Tenna_Lead_DevOps_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/06_Tenna_Lead_DevOps_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 7,
@@ -208,7 +226,10 @@
       "Dental insurance"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/07_General_Motors_Staff_Software_Systems_Engineer,_Behavior_Validation.pdf",
+    "coverLetterFile": "/cover_letters/07_General_Motors_Staff_Software_Systems_Engineer,_Behavior_Validation_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 8,
@@ -233,7 +254,10 @@
       "Benefits from day one"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/08_General_Motors_Senior_Software_Engineer,_Behavior_Validation.pdf",
+    "coverLetterFile": "/cover_letters/08_General_Motors_Senior_Software_Engineer,_Behavior_Validation_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 9,
@@ -263,7 +287,10 @@
       "Health savings account"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Full Stack Developer"
+    "category": "Full Stack Developer",
+    "resumeFile": "/resumes/09_True_Rx_Health_Strategists_Software_Engineer_(React).pdf",
+    "coverLetterFile": "/cover_letters/09_True_Rx_Health_Strategists_Software_Engineer_(React)_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 10,
@@ -294,7 +321,10 @@
       "Dental insurance"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/10_Credit_Acceptance_Senior_Golang_Software_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/10_Credit_Acceptance_Senior_Golang_Software_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 11,
@@ -325,7 +355,10 @@
       "Health savings account"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/11_Symmetry_Lending_Application_Support_Developer.pdf",
+    "coverLetterFile": "/cover_letters/11_Symmetry_Lending_Application_Support_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 12,
@@ -355,7 +388,10 @@
       "Dental insurance"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/12_General_Motors_Senior_Software_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/12_General_Motors_Senior_Software_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 13,
@@ -380,7 +416,10 @@
       "Competitive benefits package"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/13_NTT_DATA_Oracle_CPQ_Developer___Remote.pdf",
+    "coverLetterFile": "/cover_letters/13_NTT_DATA_Oracle_CPQ_Developer___Remote_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 14,
@@ -410,7 +449,10 @@
       "Disability insurance"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/14_Bellwood_Labs_Senior_Java_Software_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/14_Bellwood_Labs_Senior_Java_Software_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 15,
@@ -439,7 +481,10 @@
       "Life insurance"
     ],
     "applyUrl": "https://www.indeed.com/q-coding-bootcamp-l-remote-jobs.html",
-    "category": "Software Engineer"
+    "category": "Software Engineer",
+    "resumeFile": "/resumes/15_Russ_Hadick_&_Associates,_Inc._Oracle_CPQ_Developer.pdf",
+    "coverLetterFile": "/cover_letters/15_Russ_Hadick_&_Associates,_Inc._Oracle_CPQ_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 16,
@@ -466,7 +511,10 @@
       "Innovative work environment"
     ],
     "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
-    "category": "Full Stack Developer"
+    "category": "Full Stack Developer",
+    "resumeFile": "/resumes/16_Campfire_Full_Stack_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/16_Campfire_Full_Stack_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 17,
@@ -493,7 +541,10 @@
       "World-class team environment"
     ],
     "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
-    "category": "Full Stack Developer"
+    "category": "Full Stack Developer",
+    "resumeFile": "/resumes/17_Netflix_Full_Stack_Software_Engineer_(L4),_Revenue_&_Growth_Tools_Team.pdf",
+    "coverLetterFile": "/cover_letters/17_Netflix_Full_Stack_Software_Engineer_(L4),_Revenue_&_Growth_Tools_Team_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 18,
@@ -519,7 +570,10 @@
       "Flexible work environment"
     ],
     "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
-    "category": "Full Stack Developer"
+    "category": "Full Stack Developer",
+    "resumeFile": "/resumes/18_FreeUp_Remote_Full_Stack_Developer.pdf",
+    "coverLetterFile": "/cover_letters/18_FreeUp_Remote_Full_Stack_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 19,
@@ -546,7 +600,10 @@
       "Modern tech stack"
     ],
     "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
-    "category": "Full Stack Developer"
+    "category": "Full Stack Developer",
+    "resumeFile": "/resumes/19_Backpack_Front_End_Engineer_(React_Web).pdf",
+    "coverLetterFile": "/cover_letters/19_Backpack_Front_End_Engineer_(React_Web)_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
     "id": 20,
@@ -573,7 +630,9 @@
       "Growth opportunities"
     ],
     "applyUrl": "https://www.linkedin.com/jobs/remote-full-stack-developer-jobs",
-    "category": "Full Stack Developer"
+    "category": "Full Stack Developer",
+    "resumeFile": "/resumes/20_Lensa_Front_End_Developer___React.pdf",
+    "coverLetterFile": "/cover_letters/20_Lensa_Front_End_Developer___React_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   }
 ]
-
