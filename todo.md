@@ -15,6 +15,7 @@
 
 ## Updates
 - [x] Update email address to bertintshisuaka2025@gmail.com in all documents
+- [x] Remove expired WordPress Developer job (Astyra Corporation) and its documents
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page

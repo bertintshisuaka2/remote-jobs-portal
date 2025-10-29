@@ -1,42 +1,6 @@
 [
   {
     "id": 1,
-    "title": "WordPress Developer",
-    "company": "Astyra Corporation",
-    "location": "Raleigh, NC (Remote)",
-    "salary": "$41 - $43 per hour",
-    "jobType": "Contract",
-    "posted": "New",
-    "description": "The client has an URGENT/IMMEDIATE need for a PHP and WordPress Developer to get their website up and running again. Candidates need to be available immediately for the duration of the engagement.",
-    "responsibilities": [
-      "Website Access Restoration: Diagnose and repair issues related to the missing WordPress login PHP file",
-      "Static Pages Restoration: Diagnose and repair issues related to the inability to make live changes",
-      "Codebase Stabilization: Identify problematic custom PHP code, outdated plugins and legacy configurations",
-      "Content Management Support: Make minor updates to improve navigation and usability",
-      "Short-Term Maintenance Recommendations: Provide guidance on maintaining the website's operability",
-      "Documentation: Document any repairs, temporary fixes or recommendations"
-    ],
-    "requirements": [
-      "Extensive experience with PHP Development - 5 Years Required",
-      "Experience with WordPress Development - 5 Years Required",
-      "Experience reviewing existing code to diagnose and repair issues - 5 Years Required",
-      "Experience restoring login functionality for administrative access - 5 Years Required",
-      "Identify problematic custom PHP code, outdated plugins, and legacy configurations - 5 Years Required"
-    ],
-    "benefits": [
-      "401(k)",
-      "Dental insurance",
-      "Health insurance",
-      "Vision insurance"
-    ],
-    "applyUrl": "https://www.indeed.com/viewjob?jk=23b5e8d7d6b0e2b7",
-    "category": "Full Stack Developer",
-    "resumeFile": "/resumes/01_Astyra_Corporation_WordPress_Developer.pdf",
-    "coverLetterFile": "/cover_letters/01_Astyra_Corporation_WordPress_Developer_Cover_Letter.pdf",
-    "recommendationLetter": "/letter_of_recommendation.pdf"
-  },
-  {
-    "id": 2,
     "title": "AWS Cloud Native Developer",
     "company": "Cook Systems",
     "location": "Atlanta, GA (Remote)",
@@ -68,7 +32,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Software Engineer I",
     "company": "Onward Search",
     "location": "Costa Mesa, CA (Remote)",
@@ -101,7 +65,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Senior Software Engineer, Supply Chain (Odoo/Python)",
     "company": "Eaze Inc. - Corporate",
     "location": "Remote",
@@ -134,7 +98,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "AWS DevOps Engineer",
     "company": "Eduphoria",
     "location": "Remote",
@@ -167,7 +131,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "Lead DevOps Engineer",
     "company": "Tenna",
     "location": "Remote",
@@ -199,7 +163,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "Staff Software Systems Engineer, Behavior Validation",
     "company": "General Motors",
     "location": "Remote",
@@ -232,7 +196,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Senior Software Engineer, Behavior Validation",
     "company": "General Motors",
     "location": "Remote in California",
@@ -260,7 +224,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "Software Engineer (React)",
     "company": "True Rx Health Strategists",
     "location": "Remote in Indiana",
@@ -293,7 +257,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 10,
+    "id": 9,
     "title": "Senior Golang Software Engineer",
     "company": "Credit Acceptance",
     "location": "Remote",
@@ -327,7 +291,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 11,
+    "id": 10,
     "title": "Application Support Developer",
     "company": "Symmetry Lending",
     "location": "Remote",
@@ -361,7 +325,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 12,
+    "id": 11,
     "title": "Senior Software Engineer",
     "company": "General Motors",
     "location": "Remote",
@@ -394,7 +358,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 13,
+    "id": 12,
     "title": "Oracle CPQ Developer - Remote",
     "company": "NTT DATA",
     "location": "Remote in Chicago, IL",
@@ -422,7 +386,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 14,
+    "id": 13,
     "title": "Senior Java Software Engineer",
     "company": "Bellwood Labs",
     "location": "Remote",
@@ -455,7 +419,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 15,
+    "id": 14,
     "title": "Oracle CPQ Developer",
     "company": "Russ Hadick & Associates, Inc.",
     "location": "Remote",
@@ -487,7 +451,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 16,
+    "id": 15,
     "title": "Full-Stack Engineer",
     "company": "Campfire",
     "location": "San Francisco, CA (Remote)",
@@ -517,7 +481,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 17,
+    "id": 16,
     "title": "Full-Stack Software Engineer (L4), Revenue & Growth Tools Team",
     "company": "Netflix",
     "location": "United States (Remote)",
@@ -547,7 +511,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 18,
+    "id": 17,
     "title": "Remote Full Stack Developer",
     "company": "FreeUp",
     "location": "St. Petersburg, FL (Remote)",
@@ -576,7 +540,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 19,
+    "id": 18,
     "title": "Front-End Engineer (React Web)",
     "company": "Backpack",
     "location": "United States (Remote)",
@@ -606,7 +570,7 @@
     "recommendationLetter": "/letter_of_recommendation.pdf"
   },
   {
-    "id": 20,
+    "id": 19,
     "title": "Front-End Developer - React",
     "company": "Lensa",
     "location": "Remote",
