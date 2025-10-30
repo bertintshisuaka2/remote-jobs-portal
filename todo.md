@@ -28,6 +28,7 @@
 - [x] Change all white backgrounds to sky blue
 - [x] Search and add 10 new remote jobs matching profile
 - [x] Add clear job numbers to listings and corresponding documents for easy tracking
+- [ ] Add automatic job archiving feature after period of inactivity
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page

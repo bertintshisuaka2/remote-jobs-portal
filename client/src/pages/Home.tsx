@@ -26,6 +26,9 @@ interface Job {
   resumeFile: string;
   coverLetterFile: string;
   recommendationLetter: string;
+  archived?: boolean;
+  archivedDate?: string;
+  lastViewed?: string;
 }
 
 export default function Home() {
@@ -38,6 +41,7 @@ export default function Home() {
   const [previewOpen, setPreviewOpen] = useState(false);
   const [previewUrl, setPreviewUrl] = useState("");
   const [previewTitle, setPreviewTitle] = useState("");
+  const [showArchived, setShowArchived] = useState(false);
 
   const handlePreview = (url: string, title: string) => {
     setPreviewUrl(url);
