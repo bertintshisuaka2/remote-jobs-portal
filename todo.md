@@ -18,6 +18,9 @@
 - [x] Remove expired WordPress Developer job (Astyra Corporation) and its documents
 - [x] Remove expired AWS Cloud Native Developer job (Cook Systems) and its documents
 - [x] Remove Onward Search job (Costa Mesa, CA) and its documents
+- [x] Remove Eaze Inc job (Senior Software Engineer, Supply Chain) and its documents
+- [x] Create professional header with Divalaser branding, profile photo, black/yellow colors
+- [x] Change background to light black
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page

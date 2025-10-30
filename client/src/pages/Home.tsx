@@ -87,32 +87,38 @@ export default function Home() {
   }, [searchTerm, categoryFilter, jobTypeFilter, jobs]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gray-900">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-        <div className="container py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Briefcase className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">{APP_TITLE}</h1>
-                <p className="text-sm text-gray-600">Find Your Dream Remote Tech Job</p>
+      <header className="bg-black border-b-4 border-yellow-400 sticky top-0 z-50 shadow-lg">
+        <div className="container py-6">
+          <div className="flex flex-col items-center gap-4">
+            {/* Profile Photo */}
+            <div className="w-24 h-24 rounded-full border-4 border-yellow-400 overflow-hidden bg-gray-800 flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-black text-3xl font-bold">
+                KT
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <Button asChild variant="outline" size="sm">
+            
+            {/* Company Name */}
+            <div className="text-center">
+              <h1 className="text-3xl md:text-4xl font-bold text-yellow-400 tracking-wide">
+                DIVALASER SOFTWARE SOLUTIONS
+              </h1>
+              <p className="text-yellow-200 text-sm mt-1">Remote Tech Job Portal</p>
+            </div>
+            
+            {/* Action Buttons */}
+            <div className="flex items-center gap-3 mt-2">
+              <Button asChild variant="outline" size="sm" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
                 <Link href="/documents">
                   <FileText className="w-4 h-4 mr-2" />
-                  <span className="hidden sm:inline">All Documents</span>
-                  <span className="sm:hidden">Docs</span>
+                  All Documents
                 </Link>
               </Button>
-              <div className="hidden md:flex items-center gap-2 text-sm text-gray-600">
-                <Badge variant="secondary" className="bg-blue-100 text-blue-700 hover:bg-blue-200">
+              <div className="flex items-center gap-2 text-sm">
+                <span className="px-3 py-1 bg-yellow-400 text-black rounded-full font-semibold">
                   {jobs.length} Jobs Available
-                </Badge>
+                </span>
               </div>
             </div>
           </div>
@@ -120,13 +126,13 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12">
+      <section className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black py-12">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Remote Tech Jobs for Bootcamp Graduates
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-gray-900 mb-8">
               Curated opportunities for Software Engineers, Full Stack Developers, and QA Testers
             </p>
             <div className="bg-white rounded-lg p-2 shadow-xl">
@@ -141,7 +147,7 @@ export default function Home() {
                     className="pl-10 h-12 text-gray-900 border-0 focus-visible:ring-0"
                   />
                 </div>
-                <Button className="h-12 px-8 bg-blue-600 hover:bg-blue-700">Search</Button>
+                <Button className="h-12 px-8 bg-black text-yellow-400 hover:bg-gray-800">Search</Button>
               </div>
             </div>
           </div>
@@ -205,15 +211,15 @@ export default function Home() {
           {/* Job Listings */}
           <div className="lg:col-span-3">
             <div className="mb-6 flex items-center justify-between">
-              <h3 className="text-2xl font-bold text-gray-900">
+              <h3 className="text-2xl font-bold text-yellow-400">
                 {filteredJobs.length} {filteredJobs.length === 1 ? "Job" : "Jobs"} Found
               </h3>
             </div>
 
             {loading ? (
               <div className="text-center py-12">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-                <p className="mt-4 text-gray-600">Loading jobs...</p>
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400 mx-auto"></div>
+                <p className="mt-4 text-gray-300">Loading jobs...</p>
               </div>
             ) : filteredJobs.length === 0 ? (
               <Card className="text-center py-12">
