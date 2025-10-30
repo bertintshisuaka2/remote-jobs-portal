@@ -25,6 +25,7 @@
 - [x] Add LinkedIn profile (linkedin.com/in/bertintshisuaka) to all documents
 - [x] Change white cards to light blue color
 - [x] Remove "LinkedIn" word from all documents, keep only URL
+- [x] Change all white backgrounds to sky blue
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page
