@@ -500,5 +500,335 @@
     "resumeFile": "/resumes/20_Lensa_Front_End_Developer___React.pdf",
     "coverLetterFile": "/cover_letters/20_Lensa_Front_End_Developer___React_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 17,
+    "title": "Founding Software Engineer - Ruby on Rails",
+    "company": "RRelocate",
+    "location": "Remote",
+    "salary": "$200,000 - $225,000/year",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Join a founding team to build innovative products. Write clean, maintainable, and efficient code following best practices in software development.",
+    "responsibilities": [
+      "Develop full-stack applications",
+      "Write clean, maintainable code",
+      "Collaborate with founding team",
+      "Build scalable systems"
+    ],
+    "requirements": [
+      "2+ years of full-stack development experience",
+      "Ruby on Rails expertise",
+      "Strong software development best practices",
+      "Startup mindset"
+    ],
+    "benefits": [
+      "Competitive salary $200K-$225K",
+      "Founding team member",
+      "Remote work",
+      "Equity potential"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/21_RRelocate_Founding_Software_Engineer_Ruby_on_Rails.pdf",
+    "coverLetterFile": "/cover_letters/21_RRelocate_Founding_Software_Engineer_Ruby_on_Rails_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 18,
+    "title": "Senior Engineer",
+    "company": "soho square solutions",
+    "location": "Remote",
+    "salary": "$90,000 - $140,000/year",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Work on Energy Management Systems with focus on AEMS - Reliance. Strong understanding of Power Systems fundamentals required.",
+    "responsibilities": [
+      "Customize Energy Management Systems",
+      "Deliver AEMS solutions",
+      "Work with Power Systems",
+      "System integration"
+    ],
+    "requirements": [
+      "5+ years in Energy Management Systems",
+      "AEMS - Reliance experience",
+      "Power Systems fundamentals",
+      "System customization skills"
+    ],
+    "benefits": [
+      "Salary $90K-$140K",
+      "Remote work",
+      "Professional development",
+      "Flexible schedule"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/22_soho_square_solutions_Senior_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/22_soho_square_solutions_Senior_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 19,
+    "title": "Senior AWS Software Engineer",
+    "company": "Fulcrum Collaborations, LLC",
+    "location": "Remote in Glen Allen, VA",
+    "salary": "Competitive",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Build secure cloud solutions with AWS. Strong understanding of secure software development and OWASP principles required.",
+    "responsibilities": [
+      "Develop AWS cloud solutions",
+      "Implement security best practices",
+      "Follow OWASP principles",
+      "Collaborate remotely"
+    ],
+    "requirements": [
+      "AWS expertise",
+      "Secure software development",
+      "OWASP principles knowledge",
+      "Remote collaboration skills"
+    ],
+    "benefits": [
+      "Flexible environment",
+      "Collaborative culture",
+      "Remote-friendly",
+      "Professional growth"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/23_Fulcrum_Collaborations_Senior_AWS_Software_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/23_Fulcrum_Collaborations_Senior_AWS_Software_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 20,
+    "title": "Senior Node.js Engineer",
+    "company": "Findev",
+    "location": "Remote",
+    "salary": "Up to $7,500/month",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Develop and enhance backend components of high-load distributed systems built with Node.js. Work with high-performance services.",
+    "responsibilities": [
+      "Develop Node.js backend systems",
+      "Enhance distributed systems",
+      "Build high-load services",
+      "Optimize performance"
+    ],
+    "requirements": [
+      "Node.js expertise",
+      "Distributed systems experience",
+      "High-load system knowledge",
+      "Backend development skills"
+    ],
+    "benefits": [
+      "Up to $7,500/month",
+      "Remote work",
+      "High-performance team",
+      "Technical challenges"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/24_Findev_Senior_Node_js_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/24_Findev_Senior_Node_js_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 21,
+    "title": "Software Design Engineer",
+    "company": "OM Group Inc.",
+    "location": "Remote",
+    "salary": "$150,000 - $175,000/year",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Design, develop, and maintain custom software systems. Enhance existing software solutions and database integration.",
+    "responsibilities": [
+      "Design custom software systems",
+      "Develop and maintain solutions",
+      "Database integration",
+      "Enhance existing software"
+    ],
+    "requirements": [
+      "6+ years software engineering",
+      "Custom software development",
+      "Database integration skills",
+      "System design expertise"
+    ],
+    "benefits": [
+      "Salary $150K-$175K",
+      "Remote work",
+      "Custom software projects",
+      "Professional development"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/25_OM_Group_Inc_Software_Design_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/25_OM_Group_Inc_Software_Design_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 22,
+    "title": "Software Engineer - Networking Software and Services",
+    "company": "xAI",
+    "location": "Remote in Palo Alto, CA",
+    "salary": "$180,000 - $440,000/year",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Work on networking software and services at xAI. Collaborate with network engineers using extensive knowledge of network systems.",
+    "responsibilities": [
+      "Develop networking software",
+      "Collaborate with network engineers",
+      "Build network services",
+      "Strong communication"
+    ],
+    "requirements": [
+      "Strong communication skills",
+      "Network engineering knowledge",
+      "Software development expertise",
+      "Collaborative mindset"
+    ],
+    "benefits": [
+      "Salary $180K-$440K",
+      "xAI company",
+      "Cutting-edge technology",
+      "Full benefits package"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/26_xAI_Software_Engineer_Networking_Software_and_Services.pdf",
+    "coverLetterFile": "/cover_letters/26_xAI_Software_Engineer_Networking_Software_and_Services_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 23,
+    "title": "Staff Software Engineer, AI & Automation",
+    "company": "Gladly",
+    "location": "Remote",
+    "salary": "$183,000 - $215,000/year",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Architect and drive high-impact AI projects involving LLMs, embeddings, RAG, and agentic workflows. Build features from idea to production quickly.",
+    "responsibilities": [
+      "Architect AI projects",
+      "Work with LLMs and embeddings",
+      "Implement RAG systems",
+      "Build agentic workflows"
+    ],
+    "requirements": [
+      "AI/ML expertise",
+      "LLM experience",
+      "RAG knowledge",
+      "Fast-paced development"
+    ],
+    "benefits": [
+      "Salary $183K-$215K",
+      "Stock options",
+      "Parental leave",
+      "Paid time off"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/27_Gladly_Staff_Software_Engineer_AI_Automation.pdf",
+    "coverLetterFile": "/cover_letters/27_Gladly_Staff_Software_Engineer_AI_Automation_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 24,
+    "title": "Senior Python Developer",
+    "company": "Agama Solutions",
+    "location": "Remote",
+    "salary": "$140,000 - $150,000/year",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Python development role with healthcare focus. 7-10 years of development experience required with recent healthcare experience.",
+    "responsibilities": [
+      "Python development",
+      "Healthcare software solutions",
+      "System development",
+      "Code quality maintenance"
+    ],
+    "requirements": [
+      "7+ years development (preferably 10)",
+      "Healthcare experience within 3 years",
+      "Python expertise",
+      "Healthcare domain knowledge"
+    ],
+    "benefits": [
+      "Salary $140K-$150K",
+      "Remote work",
+      "Healthcare industry",
+      "Professional development"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/28_Agama_Solutions_Senior_Python_Developer.pdf",
+    "coverLetterFile": "/cover_letters/28_Agama_Solutions_Senior_Python_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 25,
+    "title": "Senior Software Engineer",
+    "company": "Altvia Solutions LLC",
+    "location": "Remote in Colorado",
+    "salary": "$150,000/year",
+    "jobType": "Full-time",
+    "category": "Full Stack Developer",
+    "posted": "New",
+    "description": "Architect and build full-stack applications across multiple technologies: React (Web & Native), Ruby on Rails (required), and Python.",
+    "responsibilities": [
+      "Develop full-stack applications",
+      "Work with React and Ruby on Rails",
+      "Python development",
+      "Deploy and scale applications"
+    ],
+    "requirements": [
+      "React (Web & Native)",
+      "Ruby on Rails (required)",
+      "Python experience",
+      "Full-stack expertise"
+    ],
+    "benefits": [
+      "Salary $150K",
+      "401(k) matching",
+      "Health insurance",
+      "Paid holidays"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/29_Altvia_Solutions_Senior_Software_Engineer.pdf",
+    "coverLetterFile": "/cover_letters/29_Altvia_Solutions_Senior_Software_Engineer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
+  },
+  {
+    "id": 26,
+    "title": "Software Developer - Applications Support & Development",
+    "company": "Navy Mutual Aid Association",
+    "location": "Remote in Arlington, VA",
+    "salary": "$130,000 - $160,000/year",
+    "jobType": "Full-time",
+    "category": "Full Stack Developer",
+    "posted": "New",
+    "description": "Full-stack role blending software engineering, DevOps, and system observability. 5+ years experience required.",
+    "responsibilities": [
+      "Full-stack development",
+      "DevOps practices",
+      "System observability",
+      "Application support"
+    ],
+    "requirements": [
+      "5+ years software development",
+      "Technical expertise",
+      "DevOps experience",
+      "System observability skills"
+    ],
+    "benefits": [
+      "Salary $130K-$160K",
+      "Full benefits",
+      "Remote work",
+      "Government contractor"
+    ],
+    "applyLink": "https://www.indeed.com/",
+    "resumeFile": "/resumes/30_Navy_Mutual_Aid_Association_Software_Developer.pdf",
+    "coverLetterFile": "/cover_letters/30_Navy_Mutual_Aid_Association_Software_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf"
   }
 ]

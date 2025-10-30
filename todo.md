@@ -26,6 +26,7 @@
 - [x] Change white cards to light blue color
 - [x] Remove "LinkedIn" word from all documents, keep only URL
 - [x] Change all white backgrounds to sky blue
+- [x] Search and add 10 new remote jobs matching profile
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page
