@@ -27,6 +27,7 @@
 - [x] Remove "LinkedIn" word from all documents, keep only URL
 - [x] Change all white backgrounds to sky blue
 - [x] Search and add 10 new remote jobs matching profile
+- [x] Add clear job numbers to listings and corresponding documents for easy tracking
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page
