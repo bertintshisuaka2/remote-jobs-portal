@@ -24,6 +24,7 @@
 - [x] Update phone number to 678-979-6811 in all documents
 - [x] Add LinkedIn profile (linkedin.com/in/bertintshisuaka) to all documents
 - [x] Change white cards to light blue color
+- [x] Remove "LinkedIn" word from all documents, keep only URL
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page
