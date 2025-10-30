@@ -31,7 +31,10 @@
     "resumeFile": "/resumes/05_Eduphoria_AWS_DevOps_Engineer.pdf",
     "coverLetterFile": "/cover_letters/05_Eduphoria_AWS_DevOps_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 1
+    "jobNumber": 1,
+    "resumeMarkdown": "/markdown/resumes/05_Eduphoria_AWS_DevOps_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/05_Eduphoria_AWS_DevOps_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 2,
@@ -64,7 +67,10 @@
     "resumeFile": "/resumes/06_Tenna_Lead_DevOps_Engineer.pdf",
     "coverLetterFile": "/cover_letters/06_Tenna_Lead_DevOps_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 2
+    "jobNumber": 2,
+    "resumeMarkdown": "/markdown/resumes/06_Tenna_Lead_DevOps_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/06_Tenna_Lead_DevOps_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 3,
@@ -98,7 +104,10 @@
     "resumeFile": "/resumes/07_General_Motors_Staff_Software_Systems_Engineer,_Behavior_Validation.pdf",
     "coverLetterFile": "/cover_letters/07_General_Motors_Staff_Software_Systems_Engineer,_Behavior_Validation_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 3
+    "jobNumber": 3,
+    "resumeMarkdown": "/markdown/resumes/07_General_Motors_Staff_Software_Systems_Engineer,_Behavior_Validation.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/07_General_Motors_Staff_Software_Systems_Engineer,_Behavior_Validation_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 4,
@@ -127,7 +136,10 @@
     "resumeFile": "/resumes/08_General_Motors_Senior_Software_Engineer,_Behavior_Validation.pdf",
     "coverLetterFile": "/cover_letters/08_General_Motors_Senior_Software_Engineer,_Behavior_Validation_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 4
+    "jobNumber": 4,
+    "resumeMarkdown": "/markdown/resumes/08_General_Motors_Senior_Software_Engineer,_Behavior_Validation.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/08_General_Motors_Senior_Software_Engineer,_Behavior_Validation_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 5,
@@ -161,7 +173,10 @@
     "resumeFile": "/resumes/09_True_Rx_Health_Strategists_Software_Engineer_(React).pdf",
     "coverLetterFile": "/cover_letters/09_True_Rx_Health_Strategists_Software_Engineer_(React)_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 5
+    "jobNumber": 5,
+    "resumeMarkdown": "/markdown/resumes/09_True_Rx_Health_Strategists_Software_Engineer_(React).md",
+    "coverLetterMarkdown": "/markdown/cover_letters/09_True_Rx_Health_Strategists_Software_Engineer_(React)_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 6,
@@ -196,7 +211,10 @@
     "resumeFile": "/resumes/10_Credit_Acceptance_Senior_Golang_Software_Engineer.pdf",
     "coverLetterFile": "/cover_letters/10_Credit_Acceptance_Senior_Golang_Software_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 6
+    "jobNumber": 6,
+    "resumeMarkdown": "/markdown/resumes/10_Credit_Acceptance_Senior_Golang_Software_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/10_Credit_Acceptance_Senior_Golang_Software_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 7,
@@ -231,7 +249,10 @@
     "resumeFile": "/resumes/11_Symmetry_Lending_Application_Support_Developer.pdf",
     "coverLetterFile": "/cover_letters/11_Symmetry_Lending_Application_Support_Developer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 7
+    "jobNumber": 7,
+    "resumeMarkdown": "/markdown/resumes/11_Symmetry_Lending_Application_Support_Developer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/11_Symmetry_Lending_Application_Support_Developer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 8,
@@ -265,7 +286,10 @@
     "resumeFile": "/resumes/12_General_Motors_Senior_Software_Engineer.pdf",
     "coverLetterFile": "/cover_letters/12_General_Motors_Senior_Software_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 8
+    "jobNumber": 8,
+    "resumeMarkdown": "/markdown/resumes/12_General_Motors_Senior_Software_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/12_General_Motors_Senior_Software_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 9,
@@ -294,7 +318,10 @@
     "resumeFile": "/resumes/13_NTT_DATA_Oracle_CPQ_Developer___Remote.pdf",
     "coverLetterFile": "/cover_letters/13_NTT_DATA_Oracle_CPQ_Developer___Remote_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 9
+    "jobNumber": 9,
+    "resumeMarkdown": "/markdown/resumes/13_NTT_DATA_Oracle_CPQ_Developer___Remote.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/13_NTT_DATA_Oracle_CPQ_Developer___Remote_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 10,
@@ -328,7 +355,10 @@
     "resumeFile": "/resumes/14_Bellwood_Labs_Senior_Java_Software_Engineer.pdf",
     "coverLetterFile": "/cover_letters/14_Bellwood_Labs_Senior_Java_Software_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 10
+    "jobNumber": 10,
+    "resumeMarkdown": "/markdown/resumes/14_Bellwood_Labs_Senior_Java_Software_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/14_Bellwood_Labs_Senior_Java_Software_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 11,
@@ -361,7 +391,10 @@
     "resumeFile": "/resumes/15_Russ_Hadick_&_Associates,_Inc._Oracle_CPQ_Developer.pdf",
     "coverLetterFile": "/cover_letters/15_Russ_Hadick_&_Associates,_Inc._Oracle_CPQ_Developer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 11
+    "jobNumber": 11,
+    "resumeMarkdown": "/markdown/resumes/15_Russ_Hadick_&_Associates,_Inc._Oracle_CPQ_Developer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/15_Russ_Hadick_&_Associates,_Inc._Oracle_CPQ_Developer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 12,
@@ -392,7 +425,10 @@
     "resumeFile": "/resumes/16_Campfire_Full_Stack_Engineer.pdf",
     "coverLetterFile": "/cover_letters/16_Campfire_Full_Stack_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 12
+    "jobNumber": 12,
+    "resumeMarkdown": "/markdown/resumes/16_Campfire_Full_Stack_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/16_Campfire_Full_Stack_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 13,
@@ -423,7 +459,10 @@
     "resumeFile": "/resumes/17_Netflix_Full_Stack_Software_Engineer_(L4),_Revenue_&_Growth_Tools_Team.pdf",
     "coverLetterFile": "/cover_letters/17_Netflix_Full_Stack_Software_Engineer_(L4),_Revenue_&_Growth_Tools_Team_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 13
+    "jobNumber": 13,
+    "resumeMarkdown": "/markdown/resumes/17_Netflix_Full_Stack_Software_Engineer_(L4),_Revenue_&_Growth_Tools_Team.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/17_Netflix_Full_Stack_Software_Engineer_(L4),_Revenue_&_Growth_Tools_Team_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 14,
@@ -453,7 +492,10 @@
     "resumeFile": "/resumes/18_FreeUp_Remote_Full_Stack_Developer.pdf",
     "coverLetterFile": "/cover_letters/18_FreeUp_Remote_Full_Stack_Developer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 14
+    "jobNumber": 14,
+    "resumeMarkdown": "/markdown/resumes/18_FreeUp_Remote_Full_Stack_Developer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/18_FreeUp_Remote_Full_Stack_Developer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 15,
@@ -484,7 +526,10 @@
     "resumeFile": "/resumes/19_Backpack_Front_End_Engineer_(React_Web).pdf",
     "coverLetterFile": "/cover_letters/19_Backpack_Front_End_Engineer_(React_Web)_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 15
+    "jobNumber": 15,
+    "resumeMarkdown": "/markdown/resumes/19_Backpack_Front_End_Engineer_(React_Web).md",
+    "coverLetterMarkdown": "/markdown/cover_letters/19_Backpack_Front_End_Engineer_(React_Web)_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 16,
@@ -515,7 +560,10 @@
     "resumeFile": "/resumes/20_Lensa_Front_End_Developer___React.pdf",
     "coverLetterFile": "/cover_letters/20_Lensa_Front_End_Developer___React_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 16
+    "jobNumber": 16,
+    "resumeMarkdown": "/markdown/resumes/20_Lensa_Front_End_Developer___React.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/20_Lensa_Front_End_Developer___React_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 17,
@@ -549,7 +597,10 @@
     "resumeFile": "/resumes/21_RRelocate_Founding_Software_Engineer_Ruby_on_Rails.pdf",
     "coverLetterFile": "/cover_letters/21_RRelocate_Founding_Software_Engineer_Ruby_on_Rails_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 17
+    "jobNumber": 17,
+    "resumeMarkdown": "/markdown/resumes/21_RRelocate_Founding_Software_Engineer_Ruby_on_Rails.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/21_RRelocate_Founding_Software_Engineer_Ruby_on_Rails_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 18,
@@ -583,7 +634,10 @@
     "resumeFile": "/resumes/22_soho_square_solutions_Senior_Engineer.pdf",
     "coverLetterFile": "/cover_letters/22_soho_square_solutions_Senior_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 18
+    "jobNumber": 18,
+    "resumeMarkdown": "/markdown/resumes/22_soho_square_solutions_Senior_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/22_soho_square_solutions_Senior_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 19,
@@ -617,7 +671,10 @@
     "resumeFile": "/resumes/23_Fulcrum_Collaborations_Senior_AWS_Software_Engineer.pdf",
     "coverLetterFile": "/cover_letters/23_Fulcrum_Collaborations_Senior_AWS_Software_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 19
+    "jobNumber": 19,
+    "resumeMarkdown": "/markdown/resumes/23_Fulcrum_Collaborations_Senior_AWS_Software_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/23_Fulcrum_Collaborations_Senior_AWS_Software_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 20,
@@ -651,7 +708,10 @@
     "resumeFile": "/resumes/24_Findev_Senior_Node_js_Engineer.pdf",
     "coverLetterFile": "/cover_letters/24_Findev_Senior_Node_js_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 20
+    "jobNumber": 20,
+    "resumeMarkdown": "/markdown/resumes/24_Findev_Senior_Node_js_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/24_Findev_Senior_Node_js_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 21,
@@ -685,7 +745,10 @@
     "resumeFile": "/resumes/25_OM_Group_Inc_Software_Design_Engineer.pdf",
     "coverLetterFile": "/cover_letters/25_OM_Group_Inc_Software_Design_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 21
+    "jobNumber": 21,
+    "resumeMarkdown": "/markdown/resumes/25_OM_Group_Inc_Software_Design_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/25_OM_Group_Inc_Software_Design_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 22,
@@ -719,7 +782,10 @@
     "resumeFile": "/resumes/26_xAI_Software_Engineer_Networking_Software_and_Services.pdf",
     "coverLetterFile": "/cover_letters/26_xAI_Software_Engineer_Networking_Software_and_Services_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 22
+    "jobNumber": 22,
+    "resumeMarkdown": "/markdown/resumes/26_xAI_Software_Engineer_Networking_Software_and_Services.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/26_xAI_Software_Engineer_Networking_Software_and_Services_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 23,
@@ -753,7 +819,10 @@
     "resumeFile": "/resumes/27_Gladly_Staff_Software_Engineer_AI_Automation.pdf",
     "coverLetterFile": "/cover_letters/27_Gladly_Staff_Software_Engineer_AI_Automation_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 23
+    "jobNumber": 23,
+    "resumeMarkdown": "/markdown/resumes/27_Gladly_Staff_Software_Engineer_AI_Automation.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/27_Gladly_Staff_Software_Engineer_AI_Automation_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 24,
@@ -787,7 +856,10 @@
     "resumeFile": "/resumes/28_Agama_Solutions_Senior_Python_Developer.pdf",
     "coverLetterFile": "/cover_letters/28_Agama_Solutions_Senior_Python_Developer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 24
+    "jobNumber": 24,
+    "resumeMarkdown": "/markdown/resumes/28_Agama_Solutions_Senior_Python_Developer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/28_Agama_Solutions_Senior_Python_Developer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 25,
@@ -821,7 +893,10 @@
     "resumeFile": "/resumes/29_Altvia_Solutions_Senior_Software_Engineer.pdf",
     "coverLetterFile": "/cover_letters/29_Altvia_Solutions_Senior_Software_Engineer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 25
+    "jobNumber": 25,
+    "resumeMarkdown": "/markdown/resumes/29_Altvia_Solutions_Senior_Software_Engineer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/29_Altvia_Solutions_Senior_Software_Engineer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   },
   {
     "id": 26,
@@ -855,6 +930,9 @@
     "resumeFile": "/resumes/30_Navy_Mutual_Aid_Association_Software_Developer.pdf",
     "coverLetterFile": "/cover_letters/30_Navy_Mutual_Aid_Association_Software_Developer_Cover_Letter.pdf",
     "recommendationLetter": "/letter_of_recommendation.pdf",
-    "jobNumber": 26
+    "jobNumber": 26,
+    "resumeMarkdown": "/markdown/resumes/30_Navy_Mutual_Aid_Association_Software_Developer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/30_Navy_Mutual_Aid_Association_Software_Developer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   }
 ]

@@ -34,6 +34,7 @@
 - [x] Add application tracking system (mark as applied, dates, notes)
 - [x] Add email integration with pre-filled attachments
 - [x] Add interview scheduling and tracking feature
+- [x] Add inline document editor for resumes, cover letters, and recommendations
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page

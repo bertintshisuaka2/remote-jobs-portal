@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import DocumentEditor from "@/components/DocumentEditor";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -16,10 +17,8 @@ interface Job {
   company: string;
   location: string;
   salary: string;
-  jobType: string;
-  posted: string;
+  type: string;
   description: string;
-  responsibilities: string[];
   requirements: string[];
   benefits: string[];
   applyUrl: string;
@@ -27,6 +26,9 @@ interface Job {
   resumeFile: string;
   coverLetterFile: string;
   recommendationLetter: string;
+  resumeMarkdown?: string;
+  coverLetterMarkdown?: string;
+  recommendationMarkdown?: string;
   archived?: boolean;
   archivedDate?: string;
   lastViewed?: string;
@@ -69,6 +71,7 @@ export default function Home() {
   const [currentJobId, setCurrentJobId] = useState<number | null>(null);
   const [currentNotes, setCurrentNotes] = useState("");
   const [interviewDialogOpen, setInterviewDialogOpen] = useState(false);
+  const [editorDialog, setEditorDialog] = useState<{ open: boolean; markdownUrl: string; title: string }>({ open: false, markdownUrl: '', title: '' });
   const [newInterview, setNewInterview] = useState<Partial<Interview>>({
     date: '',
     time: '',
@@ -258,7 +261,7 @@ export default function Home() {
 
     // Filter by job type
     if (jobTypeFilter !== "all") {
-      filtered = filtered.filter((job) => job.jobType === jobTypeFilter);
+      filtered = filtered.filter((job) => job.type === jobTypeFilter);
     }
 
     setFilteredJobs(filtered);
@@ -434,12 +437,7 @@ export default function Home() {
                             </div>
                           </CardDescription>
                         </div>
-                        <Badge
-                          variant={job.posted === "New" ? "default" : "secondary"}
-                          className={job.posted === "New" ? "bg-green-500 hover:bg-green-600" : ""}
-                        >
-                          {job.posted}
-                        </Badge>
+
                       </div>
                     </CardHeader>
 
@@ -447,7 +445,7 @@ export default function Home() {
                       <div className="flex flex-wrap gap-2">
                         <Badge variant="outline" className="flex items-center gap-1">
                           <Briefcase className="w-3 h-3" />
-                          {job.jobType}
+                          {job.type}
                         </Badge>
                         <Badge variant="outline" className="flex items-center gap-1">
                           <DollarSign className="w-3 h-3" />
@@ -458,16 +456,7 @@ export default function Home() {
 
                       <p className="text-gray-700 leading-relaxed">{job.description}</p>
 
-                      {job.responsibilities.length > 0 && (
-                        <div>
-                          <h4 className="font-semibold text-gray-900 mb-2">Key Responsibilities:</h4>
-                          <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-                            {job.responsibilities.slice(0, 3).map((resp, index) => (
-                              <li key={index}>{resp}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+
 
                       {job.requirements.length > 0 && (
                         <div>
@@ -505,6 +494,14 @@ export default function Home() {
                             <Eye className="w-4 h-4 mr-2" />
                             View Resume
                           </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => setEditorDialog({ open: true, markdownUrl: job.resumeMarkdown || '', title: `Resume - ${job.title}` })}
+                          >
+                            <FileText className="w-4 h-4 mr-2" />
+                            Edit Resume
+                          </Button>
                           <Button asChild variant="ghost" size="sm">
                             <a href={job.resumeFile} download className="text-xs">
                               <Download className="w-3 h-3 mr-1" />
@@ -521,6 +518,14 @@ export default function Home() {
                             <Eye className="w-4 h-4 mr-2" />
                             View Cover Letter
                           </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => setEditorDialog({ open: true, markdownUrl: job.coverLetterMarkdown || '', title: `Cover Letter - ${job.title}` })}
+                          >
+                            <FileText className="w-4 h-4 mr-2" />
+                            Edit Cover Letter
+                          </Button>
                           <Button asChild variant="ghost" size="sm">
                             <a href={job.coverLetterFile} download className="text-xs">
                               <Download className="w-3 h-3 mr-1" />
@@ -536,6 +541,14 @@ export default function Home() {
                           >
                             <Eye className="w-4 h-4 mr-2" />
                             View Recommendation
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => setEditorDialog({ open: true, markdownUrl: job.recommendationMarkdown || '', title: "Letter of Recommendation" })}
+                          >
+                            <FileText className="w-4 h-4 mr-2" />
+                            Edit Recommendation
                           </Button>
                           <Button asChild variant="ghost" size="sm">
                             <a href={job.recommendationLetter} download className="text-xs">
@@ -792,6 +805,14 @@ export default function Home() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Document Editor Dialog */}
+      <DocumentEditor
+        open={editorDialog.open}
+        onOpenChange={(open) => setEditorDialog({ ...editorDialog, open })}
+        markdownUrl={editorDialog.markdownUrl}
+        title={editorDialog.title}
+      />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 mt-12">
