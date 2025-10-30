@@ -35,6 +35,7 @@
 - [x] Add email integration with pre-filled attachments
 - [x] Add interview scheduling and tracking feature
 - [x] Add inline document editor for resumes, cover letters, and recommendations
+- [x] Remove LinkedIn profile URL from all resumes, cover letters, and recommendation letter
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page

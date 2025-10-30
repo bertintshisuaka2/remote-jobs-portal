@@ -3,7 +3,7 @@
 ---
 
 # KABUNDI Tshisuaka
-Remote | (678) 979-6811 | bertintshisuaka2025@gmail.com | linkedin.com/in/bertintshisuaka
+Remote | (678) 979-6811 | bertintshisuaka2025@gmail.com | 
 
 ---
 

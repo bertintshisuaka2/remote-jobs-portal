@@ -1,7 +1,7 @@
 # KABUNDI Tshisuaka
 **Oracle CPQ Developer Candidate**
 
-365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com | linkedin.com/in/bertintshisuaka | [LinkedIn Profile URL Placeholder]
+365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com |  | [LinkedIn Profile URL Placeholder]
 
 ---
 

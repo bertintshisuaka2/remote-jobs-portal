@@ -1,5 +1,5 @@
 # KABUNDI Tshisuaka
-365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com | linkedin.com/in/bertintshisuaka
+365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com | 
 
 ## Professional Summary
 Highly analytical and results-driven professional transitioning from 18+ years of extensive experience in **Industrial Automation** and **Maintenance Engineering** to a **Staff Software Systems Engineer** role. Proven expertise in **systems troubleshooting**, **electrical diagnostics**, and **PLC programming** directly translates to a strong foundation in **behavior validation** and **system design**. Possessing a B.S. in Software Engineering and recent certifications in Full Stack Web Development and QA Software Testing, I am adept at applying rigorous problem-solving and **verification** methodologies to complex systems. Seeking to leverage deep domain knowledge in industrial control systems and newly acquired software development skills to **design and implement validation strategies** for **automotive software** and **prototype complex systems** at General Motors.

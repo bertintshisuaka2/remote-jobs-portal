@@ -1,5 +1,5 @@
 # KABUNDI Tshisuaka
-365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com | linkedin.com/in/bertintshisuaka
+365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com | 
 
 ## Professional Summary
 Highly motivated and results-oriented professional transitioning from a distinguished **18-year career in Industrial Automation and Maintenance Engineering** to **Software Engineering**. Proven expertise in complex **systems troubleshooting**, **electrical diagnostics**, and **PLC programming** translates directly to building robust and **scalable React applications**. Seeking to leverage a strong foundation in **full stack development skills** (React.js, JavaScript, Node.js) and a Bachelor of Science in Software Engineering to enhance **digital transformation initiatives** at True Rx Health Strategists. Exceptional ability to apply logical thinking, problem-solving, and systems optimization in high-pressure environments, making me a valuable asset to **collaborate with cross-functional teams**.

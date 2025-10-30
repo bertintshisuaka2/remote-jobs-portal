@@ -5,7 +5,7 @@
 # KABUNDI Tshisuaka
 
 **365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com**  
-**linkedin.com/in/bertintshisuaka**
+****
 
 ---
 

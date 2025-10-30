@@ -3,7 +3,7 @@
 ---
 
 # KABUNDI Tshisuaka
-365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com | linkedin.com/in/bertintshisuaka
+365 Starbuck Parkway, GA 30567 | (678) 979-6811 | bertintshisuaka2025@gmail.com | 
 
 ## Professional Summary
 Highly motivated and results-oriented professional transitioning from over **18 years of high-pressure industrial automation and maintenance engineering** to a career in software development and application support. Proven expert in **systems troubleshooting**, **diagnostics**, and **resolving complex production incidents** to maintain operational stability. Possesses a strong **development background** and logical thinking developed through PLC programming and reinforced by a B.S. in Software Engineering and a Full Stack Web Development Bootcamp. Seeking to leverage deep experience in **problem-solving**, **on-call support**, and developing **small enhancements** (automation scripts/PLC logic) to excel as an **Application Support Developer** at Symmetry Lending.
