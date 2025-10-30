@@ -159,7 +159,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           {/* Filters Sidebar */}
           <aside className="lg:col-span-1">
-            <Card className="sticky top-24">
+            <Card className="sticky top-24 bg-blue-50 border-blue-200">
               <CardHeader>
                 <CardTitle className="text-lg">Filters</CardTitle>
               </CardHeader>
@@ -241,7 +241,7 @@ export default function Home() {
             ) : (
               <div className="space-y-4">
                 {filteredJobs.map((job) => (
-                  <Card key={job.id} className="hover:shadow-lg transition-shadow duration-200">
+                  <Card key={job.id} className="bg-blue-50 hover:shadow-lg transition-shadow duration-200 border-blue-200">
                     <CardHeader>
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex-1">

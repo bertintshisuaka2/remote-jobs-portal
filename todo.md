@@ -21,6 +21,9 @@
 - [x] Remove Eaze Inc job (Senior Software Engineer, Supply Chain) and its documents
 - [x] Create professional header with Divalaser branding, profile photo, black/yellow colors
 - [x] Change background to light black
+- [x] Update phone number to 678-979-6811 in all documents
+- [x] Add LinkedIn profile (linkedin.com/in/bertintshisuaka) to all documents
+- [x] Change white cards to light blue color
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page
