@@ -29,6 +29,10 @@
 - [x] Search and add 10 new remote jobs matching profile
 - [x] Add clear job numbers to listings and corresponding documents for easy tracking
 - [ ] Add automatic job archiving feature after period of inactivity
+- [x] Add one-click download all documents feature
+- [x] Add copy document links to clipboard functionality
+- [x] Add application tracking system (mark as applied, dates, notes)
+- [x] Add email integration with pre-filled attachments
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page

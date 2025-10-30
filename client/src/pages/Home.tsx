@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { APP_TITLE } from "@/const";
 import { Briefcase, DollarSign, Download, ExternalLink, Eye, FileText, MapPin, Search } from "lucide-react";
@@ -29,6 +30,17 @@ interface Job {
   archived?: boolean;
   archivedDate?: string;
   lastViewed?: string;
+  applied?: boolean;
+  appliedDate?: string;
+  applicationNotes?: string;
+}
+
+interface ApplicationStatus {
+  [jobId: number]: {
+    applied: boolean;
+    appliedDate?: string;
+    notes?: string;
+  };
 }
 
 export default function Home() {
@@ -42,11 +54,103 @@ export default function Home() {
   const [previewUrl, setPreviewUrl] = useState("");
   const [previewTitle, setPreviewTitle] = useState("");
   const [showArchived, setShowArchived] = useState(false);
+  const [applicationStatus, setApplicationStatus] = useState<ApplicationStatus>({});
+  const [notesDialogOpen, setNotesDialogOpen] = useState(false);
+  const [currentJobId, setCurrentJobId] = useState<number | null>(null);
+  const [currentNotes, setCurrentNotes] = useState("");
 
   const handlePreview = (url: string, title: string) => {
     setPreviewUrl(url);
     setPreviewTitle(title);
     setPreviewOpen(true);
+  };
+
+  // Load application status from localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem('applicationStatus');
+    if (saved) {
+      setApplicationStatus(JSON.parse(saved));
+    }
+  }, []);
+
+  // Save application status to localStorage
+  const saveApplicationStatus = (status: ApplicationStatus) => {
+    setApplicationStatus(status);
+    localStorage.setItem('applicationStatus', JSON.stringify(status));
+  };
+
+  // Mark job as applied
+  const markAsApplied = (jobId: number) => {
+    const newStatus = {
+      ...applicationStatus,
+      [jobId]: {
+        applied: true,
+        appliedDate: new Date().toISOString(),
+        notes: applicationStatus[jobId]?.notes || ''
+      }
+    };
+    saveApplicationStatus(newStatus);
+  };
+
+  // Open notes dialog
+  const openNotesDialog = (jobId: number) => {
+    setCurrentJobId(jobId);
+    setCurrentNotes(applicationStatus[jobId]?.notes || '');
+    setNotesDialogOpen(true);
+  };
+
+  // Save notes
+  const saveNotes = () => {
+    if (currentJobId) {
+      const newStatus = {
+        ...applicationStatus,
+        [currentJobId]: {
+          ...applicationStatus[currentJobId],
+          applied: applicationStatus[currentJobId]?.applied || false,
+          notes: currentNotes
+        }
+      };
+      saveApplicationStatus(newStatus);
+      setNotesDialogOpen(false);
+    }
+  };
+
+  // Download all documents for a job
+  const downloadAllDocuments = async (job: Job) => {
+    const files = [
+      { url: job.resumeFile, name: `Job_${job.id}_Resume.pdf` },
+      { url: job.coverLetterFile, name: `Job_${job.id}_Cover_Letter.pdf` },
+      { url: job.recommendationLetter, name: `Job_${job.id}_Recommendation.pdf` }
+    ];
+
+    for (const file of files) {
+      const link = document.createElement('a');
+      link.href = file.url;
+      link.download = file.name;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      await new Promise(resolve => setTimeout(resolve, 500));
+    }
+  };
+
+  // Copy document links to clipboard
+  const copyLinksToClipboard = (job: Job) => {
+    const baseUrl = window.location.origin;
+    const links = `Job #${job.id} - ${job.title}\n\nResume: ${baseUrl}${job.resumeFile}\nCover Letter: ${baseUrl}${job.coverLetterFile}\nRecommendation: ${baseUrl}${job.recommendationLetter}`;
+    navigator.clipboard.writeText(links);
+  };
+
+  // Generate email with attachments
+  const generateEmail = (job: Job) => {
+    const subject = encodeURIComponent(`Application for ${job.title} at ${job.company}`);
+    const body = encodeURIComponent(
+      `Dear Hiring Manager,\n\n` +
+      `I am writing to express my interest in the ${job.title} position at ${job.company}.\n\n` +
+      `Please find attached my resume, cover letter, and letter of recommendation.\n\n` +
+      `Best regards,\nKABUNDI Tshisuaka\n(678) 979-6811\nbertintshisuaka2025@gmail.com`
+    );
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
   };
 
   useEffect(() => {
@@ -371,12 +475,69 @@ export default function Home() {
                           </Button>
                         </div>
                       </div>
-                      <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
-                        <a href={job.applyUrl} target="_blank" rel="noopener noreferrer">
-                          Apply Now
-                          <ExternalLink className="w-4 h-4 ml-2" />
-                        </a>
-                      </Button>
+                      {/* Application Management Buttons */}
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 w-full">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => downloadAllDocuments(job)}
+                          className="text-xs"
+                        >
+                          <Download className="w-3 h-3 mr-1" />
+                          Download All
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => {
+                            copyLinksToClipboard(job);
+                            alert('Document links copied to clipboard!');
+                          }}
+                          className="text-xs"
+                        >
+                          <FileText className="w-3 h-3 mr-1" />
+                          Copy Links
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => generateEmail(job)}
+                          className="text-xs"
+                        >
+                          📧 Email
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => openNotesDialog(job.id)}
+                          className="text-xs"
+                        >
+                          📝 Notes
+                        </Button>
+                      </div>
+                      
+                      {/* Apply Button with Status */}
+                      <div className="flex gap-2 w-full">
+                        <Button
+                          asChild
+                          className={`flex-1 ${applicationStatus[job.id]?.applied ? 'bg-green-600 hover:bg-green-700' : 'bg-blue-600 hover:bg-blue-700'}`}
+                        >
+                          <a href={job.applyUrl} target="_blank" rel="noopener noreferrer" onClick={() => markAsApplied(job.id)}>
+                            {applicationStatus[job.id]?.applied ? '✓ Applied' : 'Apply Now'}
+                            <ExternalLink className="w-4 h-4 ml-2" />
+                          </a>
+                        </Button>
+                      </div>
+                      
+                      {/* Application Status */}
+                      {applicationStatus[job.id]?.applied && (
+                        <div className="text-xs text-gray-600 bg-green-50 p-2 rounded">
+                          Applied on: {new Date(applicationStatus[job.id].appliedDate!).toLocaleDateString()}
+                          {applicationStatus[job.id].notes && (
+                            <div className="mt-1 text-gray-700">Note: {applicationStatus[job.id].notes}</div>
+                          )}
+                        </div>
+                      )}
                     </CardFooter>
                   </Card>
                 ))}
@@ -413,6 +574,34 @@ export default function Home() {
                 <Download className="w-4 h-4 mr-2" />
                 Download
               </a>
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Notes Dialog */}
+      <Dialog open={notesDialogOpen} onOpenChange={setNotesDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Application Notes</DialogTitle>
+            <DialogDescription>
+              Add notes about this job application
+            </DialogDescription>
+          </DialogHeader>
+          <div className="mt-4">
+            <Textarea
+              value={currentNotes}
+              onChange={(e) => setCurrentNotes(e.target.value)}
+              placeholder="Add your notes here... (e.g., interview dates, follow-up actions, contact person)"
+              className="min-h-[150px]"
+            />
+          </div>
+          <div className="flex justify-end gap-2 mt-4">
+            <Button variant="outline" onClick={() => setNotesDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={saveNotes}>
+              Save Notes
             </Button>
           </div>
         </DialogContent>
