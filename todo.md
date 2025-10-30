@@ -33,6 +33,7 @@
 - [x] Add copy document links to clipboard functionality
 - [x] Add application tracking system (mark as applied, dates, notes)
 - [x] Add email integration with pre-filled attachments
+- [x] Add interview scheduling and tracking feature
 
 ## Bug Fixes
 - [x] Fix React ref warning in Dialog component on Documents page

@@ -35,11 +35,21 @@ interface Job {
   applicationNotes?: string;
 }
 
+interface Interview {
+  id: string;
+  date: string;
+  time: string;
+  type: 'phone' | 'video' | 'in-person' | 'other';
+  interviewer?: string;
+  notes?: string;
+}
+
 interface ApplicationStatus {
   [jobId: number]: {
     applied: boolean;
     appliedDate?: string;
     notes?: string;
+    interviews?: Interview[];
   };
 }
 
@@ -58,6 +68,14 @@ export default function Home() {
   const [notesDialogOpen, setNotesDialogOpen] = useState(false);
   const [currentJobId, setCurrentJobId] = useState<number | null>(null);
   const [currentNotes, setCurrentNotes] = useState("");
+  const [interviewDialogOpen, setInterviewDialogOpen] = useState(false);
+  const [newInterview, setNewInterview] = useState<Partial<Interview>>({
+    date: '',
+    time: '',
+    type: 'video',
+    interviewer: '',
+    notes: ''
+  });
 
   const handlePreview = (url: string, title: string) => {
     setPreviewUrl(url);
@@ -151,6 +169,58 @@ export default function Home() {
       `Best regards,\nKABUNDI Tshisuaka\n(678) 979-6811\nbertintshisuaka2025@gmail.com`
     );
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
+  };
+
+  // Open interview dialog
+  const openInterviewDialog = (jobId: number) => {
+    setCurrentJobId(jobId);
+    setNewInterview({
+      date: '',
+      time: '',
+      type: 'video',
+      interviewer: '',
+      notes: ''
+    });
+    setInterviewDialogOpen(true);
+  };
+
+  // Add interview
+  const addInterview = () => {
+    if (currentJobId && newInterview.date && newInterview.time) {
+      const interview: Interview = {
+        id: Date.now().toString(),
+        date: newInterview.date!,
+        time: newInterview.time!,
+        type: newInterview.type || 'video',
+        interviewer: newInterview.interviewer,
+        notes: newInterview.notes
+      };
+
+      const currentInterviews = applicationStatus[currentJobId]?.interviews || [];
+      const newStatus = {
+        ...applicationStatus,
+        [currentJobId]: {
+          ...applicationStatus[currentJobId],
+          applied: applicationStatus[currentJobId]?.applied || false,
+          interviews: [...currentInterviews, interview]
+        }
+      };
+      saveApplicationStatus(newStatus);
+      setInterviewDialogOpen(false);
+    }
+  };
+
+  // Delete interview
+  const deleteInterview = (jobId: number, interviewId: string) => {
+    const currentInterviews = applicationStatus[jobId]?.interviews || [];
+    const newStatus = {
+      ...applicationStatus,
+      [jobId]: {
+        ...applicationStatus[jobId],
+        interviews: currentInterviews.filter(i => i.id !== interviewId)
+      }
+    };
+    saveApplicationStatus(newStatus);
   };
 
   useEffect(() => {
@@ -476,7 +546,7 @@ export default function Home() {
                         </div>
                       </div>
                       {/* Application Management Buttons */}
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 w-full">
+                      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 w-full">
                         <Button
                           variant="outline"
                           size="sm"
@@ -514,6 +584,14 @@ export default function Home() {
                         >
                           📝 Notes
                         </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => openInterviewDialog(job.id)}
+                          className="text-xs"
+                        >
+                          📅 Interview
+                        </Button>
                       </div>
                       
                       {/* Apply Button with Status */}
@@ -536,6 +614,41 @@ export default function Home() {
                           {applicationStatus[job.id].notes && (
                             <div className="mt-1 text-gray-700">Note: {applicationStatus[job.id].notes}</div>
                           )}
+                        </div>
+                      )}
+                      
+                      {/* Interview Schedule */}
+                      {applicationStatus[job.id]?.interviews && applicationStatus[job.id].interviews!.length > 0 && (
+                        <div className="text-xs bg-purple-50 p-3 rounded border border-purple-200">
+                          <div className="font-semibold text-purple-900 mb-2">📅 Scheduled Interviews ({applicationStatus[job.id].interviews!.length})</div>
+                          <div className="space-y-2">
+                            {applicationStatus[job.id].interviews!.map((interview) => (
+                              <div key={interview.id} className="bg-white p-2 rounded border border-purple-100">
+                                <div className="flex justify-between items-start">
+                                  <div className="flex-1">
+                                    <div className="font-medium text-gray-900">
+                                      {new Date(interview.date).toLocaleDateString()} at {interview.time}
+                                    </div>
+                                    <div className="text-gray-600 mt-1">
+                                      Type: <span className="capitalize">{interview.type}</span>
+                                      {interview.interviewer && ` | Interviewer: ${interview.interviewer}`}
+                                    </div>
+                                    {interview.notes && (
+                                      <div className="text-gray-700 mt-1 italic">{interview.notes}</div>
+                                    )}
+                                  </div>
+                                  <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    onClick={() => deleteInterview(job.id, interview.id)}
+                                    className="text-red-600 hover:text-red-800 h-6 w-6 p-0"
+                                  >
+                                    ×
+                                  </Button>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       )}
                     </CardFooter>
@@ -574,6 +687,79 @@ export default function Home() {
                 <Download className="w-4 h-4 mr-2" />
                 Download
               </a>
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Interview Dialog */}
+      <Dialog open={interviewDialogOpen} onOpenChange={setInterviewDialogOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>Schedule Interview</DialogTitle>
+            <DialogDescription>
+              Add interview details for this job application
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 mt-4">
+            <div>
+              <label className="text-sm font-medium mb-2 block">Date</label>
+              <Input
+                type="date"
+                value={newInterview.date}
+                onChange={(e) => setNewInterview({...newInterview, date: e.target.value})}
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium mb-2 block">Time</label>
+              <Input
+                type="time"
+                value={newInterview.time}
+                onChange={(e) => setNewInterview({...newInterview, time: e.target.value})}
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium mb-2 block">Interview Type</label>
+              <Select
+                value={newInterview.type}
+                onValueChange={(value: any) => setNewInterview({...newInterview, type: value})}
+              >
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="phone">Phone</SelectItem>
+                  <SelectItem value="video">Video Call</SelectItem>
+                  <SelectItem value="in-person">In-Person</SelectItem>
+                  <SelectItem value="other">Other</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div>
+              <label className="text-sm font-medium mb-2 block">Interviewer (Optional)</label>
+              <Input
+                type="text"
+                value={newInterview.interviewer}
+                onChange={(e) => setNewInterview({...newInterview, interviewer: e.target.value})}
+                placeholder="e.g., John Smith, HR Manager"
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium mb-2 block">Notes (Optional)</label>
+              <Textarea
+                value={newInterview.notes}
+                onChange={(e) => setNewInterview({...newInterview, notes: e.target.value})}
+                placeholder="Add any additional notes about the interview..."
+                className="min-h-[80px]"
+              />
+            </div>
+          </div>
+          <div className="flex justify-end gap-2 mt-4">
+            <Button variant="outline" onClick={() => setInterviewDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={addInterview} disabled={!newInterview.date || !newInterview.time}>
+              Add Interview
             </Button>
           </div>
         </DialogContent>
