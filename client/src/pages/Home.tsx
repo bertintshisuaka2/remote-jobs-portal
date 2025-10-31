@@ -90,6 +90,8 @@ export default function Home() {
   const [profilePhoto, setProfilePhoto] = useState<string>(
     localStorage.getItem('profilePhoto') || ''
   );
+  const [notifications, setNotifications] = useState<any[]>([]);
+  const [showNotifications, setShowNotifications] = useState(false);
   const [photoUploadOpen, setPhotoUploadOpen] = useState(false);
   const [subscriptionEmail, setSubscriptionEmail] = useState('');
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
@@ -134,11 +136,39 @@ export default function Home() {
     setPhotoUploadOpen(false);
   };
 
+  const handleDismissNotification = (notificationId: number) => {
+    const userNotifications = JSON.parse(localStorage.getItem('userNotifications') || '[]');
+    const updatedNotifications = userNotifications.map((n: any) =>
+      n.id === notificationId ? { ...n, read: true } : n
+    );
+    localStorage.setItem('userNotifications', JSON.stringify(updatedNotifications));
+    setNotifications(notifications.filter(n => n.id !== notificationId));
+    if (notifications.length <= 1) {
+      setShowNotifications(false);
+    }
+  };
+
+  const handleDismissAllNotifications = () => {
+    const userNotifications = JSON.parse(localStorage.getItem('userNotifications') || '[]');
+    const updatedNotifications = userNotifications.map((n: any) => ({ ...n, read: true }));
+    localStorage.setItem('userNotifications', JSON.stringify(updatedNotifications));
+    setNotifications([]);
+    setShowNotifications(false);
+  };
+
   // Load application status from localStorage
   useEffect(() => {
     const saved = localStorage.getItem('applicationStatus');
     if (saved) {
       setApplicationStatus(JSON.parse(saved));
+    }
+
+    // Load notifications
+    const userNotifications = JSON.parse(localStorage.getItem('userNotifications') || '[]');
+    const unreadNotifications = userNotifications.filter((n: any) => !n.read);
+    setNotifications(unreadNotifications);
+    if (unreadNotifications.length > 0) {
+      setShowNotifications(true);
     }
   }, []);
 
@@ -981,6 +1011,86 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Notification Dialog */}
+      {showNotifications && notifications.length > 0 && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[80vh] overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 flex items-center justify-between">
+              <div className="flex items-center gap-2 text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                </svg>
+                <h3 className="font-bold text-lg">Notifications ({notifications.length})</h3>
+              </div>
+              <button
+                onClick={() => setShowNotifications(false)}
+                className="text-white hover:text-gray-200 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div className="overflow-y-auto max-h-[60vh] p-4 space-y-3">
+              {notifications.map((notification) => (
+                <div
+                  key={notification.id}
+                  className="bg-blue-50 border border-blue-200 rounded-lg p-4 relative"
+                >
+                  <button
+                    onClick={() => handleDismissNotification(notification.id)}
+                    className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <p className="text-gray-800 pr-6">{notification.message}</p>
+                  <p className="text-xs text-gray-500 mt-2">
+                    {new Date(notification.timestamp).toLocaleString()}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="border-t p-4 flex gap-2">
+              <Button
+                onClick={handleDismissAllNotifications}
+                className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white"
+              >
+                Dismiss All
+              </Button>
+              <Button
+                onClick={() => setShowNotifications(false)}
+                variant="outline"
+                className="flex-1"
+              >
+                Close
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">

@@ -89,3 +89,7 @@
 
 - [x] Add developer contact information (Bertin Tshisuaka, 678-979-6811) to Forgot PIN dialog
 
+
+- [x] Fix administrator login not working with PIN 7881
+- [x] Add notification feature for administrator to send messages to users
+
