@@ -53,3 +53,12 @@
 
 - [x] Add IBM Entry Level Backend Developer job listing to portal as job #27
 
+
+- [x] Create resume, cover letter, and letter of recommendation for Entry Level Hardware Developer position
+
+
+- [x] Create resume, cover letter, and letter of recommendation for IBM Application Developer - AWS Cloud FullStack position
+
+
+- [x] Create resume, cover letter, and letter of recommendation for IBM Entry Level Application Developer (Cloud Technologies) position
+
