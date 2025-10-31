@@ -91,10 +91,27 @@ export default function Home() {
     localStorage.getItem('profilePhoto') || ''
   );
   const [photoUploadOpen, setPhotoUploadOpen] = useState(false);
+  const [subscriptionEmail, setSubscriptionEmail] = useState('');
+  const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
 
   const handlePreview = (url: string, title: string) => {
     // Open PDF in new tab instead of iframe for better compatibility
     window.open(url, '_blank');
+  };
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (subscriptionEmail && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(subscriptionEmail)) {
+      // Store subscription in localStorage
+      const subscriptions = JSON.parse(localStorage.getItem('jobAlertSubscriptions') || '[]');
+      if (!subscriptions.includes(subscriptionEmail)) {
+        subscriptions.push(subscriptionEmail);
+        localStorage.setItem('jobAlertSubscriptions', JSON.stringify(subscriptions));
+      }
+      setSubscriptionSuccess(true);
+      setSubscriptionEmail('');
+      setTimeout(() => setSubscriptionSuccess(false), 5000);
+    }
   };
 
   const handlePhotoUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -912,8 +929,46 @@ export default function Home() {
         </DialogContent>
       </Dialog>
 
+      {/* Job Alerts Subscription Section */}
+      <section className="bg-gradient-to-r from-yellow-400 to-yellow-500 py-16 mt-12">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Get Weekly Job Alerts
+            </h2>
+            <p className="text-gray-800 mb-8">
+              Subscribe to receive curated remote tech job opportunities delivered to your inbox every week.
+            </p>
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <Input
+                type="email"
+                placeholder="Enter your email address"
+                value={subscriptionEmail}
+                onChange={(e) => setSubscriptionEmail(e.target.value)}
+                className="flex-1 bg-white border-2 border-gray-900 text-gray-900 placeholder:text-gray-500"
+                required
+              />
+              <Button
+                type="submit"
+                className="bg-gray-900 hover:bg-gray-800 text-white px-8 whitespace-nowrap"
+              >
+                Subscribe
+              </Button>
+            </form>
+            {subscriptionSuccess && (
+              <div className="mt-4 p-3 bg-green-100 border border-green-400 text-green-800 rounded-lg">
+                ✓ Successfully subscribed! You'll receive weekly job alerts.
+              </div>
+            )}
+            <p className="text-sm text-gray-700 mt-4">
+              We respect your privacy. Unsubscribe anytime.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8 mt-12">
+      <footer className="bg-gray-900 text-white py-8">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>

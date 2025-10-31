@@ -64,6 +64,8 @@
 
 
 
+- [x] Add weekly job alerts subscription feature with email input
+
 ## Bug Fixes (Current)
-- [ ] Fix checkpoint issue preventing project publication
+- [x] Fix checkpoint issue preventing project publication
 
