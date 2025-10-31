@@ -69,3 +69,9 @@
 ## Bug Fixes (Current)
 - [x] Fix checkpoint issue preventing project publication
 
+
+- [x] Create confirmation email template for job alerts subscribers
+
+
+- [x] Add PIN-based login system with user (3495) and admin (7881) access, including admin ability to change user PIN
+

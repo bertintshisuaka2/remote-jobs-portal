@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useLocation } from "wouter";
 
-const CORRECT_PIN = "2384";
+const ADMIN_PIN = "7881";
 
 export default function Login() {
   const [pin, setPin] = useState("");
@@ -22,9 +22,16 @@ export default function Login() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (pin === CORRECT_PIN) {
-      // Store authentication in sessionStorage
-      sessionStorage.setItem("authenticated", "true");
+    const userPin = localStorage.getItem("userPin") || "3495";
+
+    // Admin PIN is 3 digits, user PIN is 4 digits
+    if (pin === ADMIN_PIN) {
+      localStorage.setItem("isAuthenticated", "true");
+      localStorage.setItem("userRole", "admin");
+      setLocation("/admin");
+    } else if (pin === userPin) {
+      localStorage.setItem("isAuthenticated", "true");
+      localStorage.setItem("userRole", "user");
       setLocation("/");
     } else {
       setError("Incorrect PIN. Please try again.");
