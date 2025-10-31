@@ -934,5 +934,46 @@
     "resumeMarkdown": "/markdown/resumes/30_Navy_Mutual_Aid_Association_Software_Developer.md",
     "coverLetterMarkdown": "/markdown/cover_letters/30_Navy_Mutual_Aid_Association_Software_Developer_Cover_Letter.md",
     "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
+  },
+  {
+    "id": 27,
+    "title": "#27 - Entry Level Backend Developer",
+    "company": "IBM",
+    "location": "Remote",
+    "salary": "Competitive salary",
+    "jobType": "Full-time",
+    "category": "Software Engineer",
+    "posted": "New",
+    "description": "Join IBM as an Entry Level Backend Developer and work on large-scale systems that impact users globally. Build innovative backend solutions using Java, JavaScript, and modern cloud technologies.",
+    "responsibilities": [
+      "Work with client-server architectures",
+      "Create and maintain RESTful APIs",
+      "Design and implement large-scale backend systems",
+      "Collaborate with global engineering teams",
+      "Apply Agile development methodologies"
+    ],
+    "requirements": [
+      "Knowledge of Java, JavaScript, SQL",
+      "Understanding of client-server architecture",
+      "Experience with API development",
+      "Familiarity with Agile/Scrum",
+      "Strong problem-solving skills"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Global impact projects",
+      "Career development opportunities",
+      "Collaborative culture",
+      "Continuous learning",
+      "Remote work flexibility"
+    ],
+    "applyLink": "https://www.ibm.com/careers",
+    "resumeFile": "/resumes/27_IBM_Entry_Level_Backend_Developer.pdf",
+    "coverLetterFile": "/cover_letters/27_IBM_Entry_Level_Backend_Developer_Cover_Letter.pdf",
+    "recommendationLetter": "/letter_of_recommendation.pdf",
+    "jobNumber": 27,
+    "resumeMarkdown": "/markdown/resumes/27_IBM_Entry_Level_Backend_Developer.md",
+    "coverLetterMarkdown": "/markdown/cover_letters/27_IBM_Entry_Level_Backend_Developer_Cover_Letter.md",
+    "recommendationMarkdown": "/markdown/letter_of_recommendation.md"
   }
 ]

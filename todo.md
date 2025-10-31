@@ -44,3 +44,12 @@
 - [x] Fix file paths - preview and download buttons not working
 - [x] Fix Preview button - nothing showing up when clicked
 
+
+- [x] Create resume and cover letter for Entry Level Backend position at IBM
+
+
+- [x] Remove Python from IBM resume and cover letter programming languages
+
+
+- [x] Add IBM Entry Level Backend Developer job listing to portal as job #27
+
