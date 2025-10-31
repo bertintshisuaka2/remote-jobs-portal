@@ -81,9 +81,8 @@ export default function Home() {
   });
 
   const handlePreview = (url: string, title: string) => {
-    setPreviewUrl(url);
-    setPreviewTitle(title);
-    setPreviewOpen(true);
+    // Open PDF in new tab instead of iframe for better compatibility
+    window.open(url, '_blank');
   };
 
   // Load application status from localStorage
