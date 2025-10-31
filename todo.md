@@ -78,3 +78,6 @@
 
 - [x] Update login page with black and yellow colors, change name to BKT, and set uploaded profile photo
 
+
+- [x] Add 'Forgot PIN' button to login page for credential reset
+
