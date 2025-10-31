@@ -46,20 +46,20 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 p-4">
-      <Card className="w-full max-w-md shadow-2xl bg-sky-50">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 p-4">
+      <Card className="w-full max-w-md shadow-2xl bg-white">
         <CardHeader className="text-center pb-4">
           <div className="flex justify-center mb-6">
             <div className="relative">
               <img
-                src="/profile-photo.jpg"
-                alt="KABUNDI Tshisuaka"
-                className="w-32 h-32 rounded-full object-cover border-4 border-blue-600 shadow-lg"
+                src="/bkt-profile.jpg"
+                alt="BKT"
+                className="w-32 h-32 rounded-full object-cover border-4 border-yellow-400 shadow-lg"
               />
             </div>
           </div>
-          <CardTitle className="text-2xl font-bold">Divalaser Software Solutions</CardTitle>
-          <CardDescription className="text-lg">KABUNDI Tshisuaka</CardDescription>
+          <CardTitle className="text-2xl font-bold text-gray-900">Divalaser Software Solutions</CardTitle>
+          <CardDescription className="text-lg font-bold text-yellow-600">BKT</CardDescription>
           <CardDescription>Enter your 4-digit PIN to access the portal</CardDescription>
         </CardHeader>
         
@@ -91,7 +91,7 @@ export default function Login() {
                     key={index}
                     className={`w-4 h-4 rounded-full border-2 transition-all ${
                       pin.length > index
-                        ? "bg-blue-600 border-blue-600"
+                        ? "bg-yellow-400 border-yellow-400"
                         : "bg-gray-200 border-gray-300"
                     }`}
                   />
@@ -101,7 +101,7 @@ export default function Login() {
 
             <Button
               type="submit"
-              className="w-full h-12 text-lg bg-blue-600 hover:bg-blue-700"
+              className="w-full h-12 text-lg bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold"
               disabled={pin.length !== 4}
             >
               Unlock Portal

@@ -75,3 +75,6 @@
 
 - [x] Add PIN-based login system with user (3495) and admin (7881) access, including admin ability to change user PIN
 
+
+- [x] Update login page with black and yellow colors, change name to BKT, and set uploaded profile photo
+
