@@ -81,3 +81,11 @@
 
 - [x] Add 'Forgot PIN' button to login page for credential reset
 
+
+
+## Bug Fixes (Current)
+- [x] Remove admin PIN from Forgot PIN dialog (security issue - users shouldn't see admin PIN)
+
+
+- [x] Add developer contact information (Bertin Tshisuaka, 678-979-6811) to Forgot PIN dialog
+

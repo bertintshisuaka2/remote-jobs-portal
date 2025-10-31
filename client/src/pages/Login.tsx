@@ -155,17 +155,25 @@ export default function Login() {
                   />
                 </svg>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Administrator Contact</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">Contact Administrator</h4>
                   <p className="text-sm text-gray-700 mb-3">
-                    The administrator can reset your PIN through the admin panel.
+                    Please contact your system administrator to reset your PIN. They have access to the admin panel where they can update your credentials securely.
                   </p>
-                  <div className="space-y-1 text-sm">
-                    <p className="text-gray-600">
-                      <span className="font-medium">Admin PIN:</span> 7881
-                    </p>
-                    <p className="text-gray-600">
-                      <span className="font-medium">Default User PIN:</span> 3495
-                    </p>
+                  <div className="space-y-3 text-sm">
+                    <div className="bg-white rounded-md p-3 border border-yellow-300">
+                      <p className="font-semibold text-gray-900 mb-1">Developer Contact</p>
+                      <p className="text-gray-700">Bertin Tshisuaka</p>
+                      <p className="text-gray-700">(678) 979-6811</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-700 mb-1">
+                        <span className="font-medium">What to provide:</span>
+                      </p>
+                      <ul className="list-disc list-inside text-gray-600 space-y-1 ml-2">
+                        <li>Your full name</li>
+                        <li>Reason for PIN reset</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
