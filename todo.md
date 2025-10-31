@@ -62,3 +62,8 @@
 
 - [x] Create resume, cover letter, and letter of recommendation for IBM Entry Level Application Developer (Cloud Technologies) position
 
+
+
+## Bug Fixes (Current)
+- [ ] Fix checkpoint issue preventing project publication
+
