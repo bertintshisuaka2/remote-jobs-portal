@@ -72,6 +72,14 @@ export default function Home() {
   const [currentNotes, setCurrentNotes] = useState("");
   const [interviewDialogOpen, setInterviewDialogOpen] = useState(false);
   const [editorDialog, setEditorDialog] = useState<{ open: boolean; markdownUrl: string; title: string }>({ open: false, markdownUrl: '', title: '' });
+  const [interviewData, setInterviewData] = useState<Interview>({
+    id: '',
+    date: '',
+    time: '',
+    type: 'phone',
+    interviewer: '',
+    notes: ''
+  });
   const [newInterview, setNewInterview] = useState<Partial<Interview>>({
     date: '',
     time: '',
@@ -79,10 +87,34 @@ export default function Home() {
     interviewer: '',
     notes: ''
   });
+  const [profilePhoto, setProfilePhoto] = useState<string>(
+    localStorage.getItem('profilePhoto') || ''
+  );
+  const [photoUploadOpen, setPhotoUploadOpen] = useState(false);
 
   const handlePreview = (url: string, title: string) => {
     // Open PDF in new tab instead of iframe for better compatibility
     window.open(url, '_blank');
+  };
+
+  const handlePhotoUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const photoData = reader.result as string;
+        setProfilePhoto(photoData);
+        localStorage.setItem('profilePhoto', photoData);
+        setPhotoUploadOpen(false);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleRemovePhoto = () => {
+    setProfilePhoto('');
+    localStorage.removeItem('profilePhoto');
+    setPhotoUploadOpen(false);
   };
 
   // Load application status from localStorage
@@ -273,10 +305,26 @@ export default function Home() {
         <div className="container py-6">
           <div className="flex flex-col items-center gap-4">
             {/* Profile Photo */}
-            <div className="w-24 h-24 rounded-full border-4 border-yellow-400 overflow-hidden bg-gray-800 flex items-center justify-center">
-              <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-black text-3xl font-bold">
-                KT
+            <div className="relative group">
+              <div className="w-24 h-24 rounded-full border-4 border-yellow-400 overflow-hidden bg-gray-800 flex items-center justify-center cursor-pointer"
+                   onClick={() => setPhotoUploadOpen(true)}>
+                {profilePhoto ? (
+                  <img src={profilePhoto} alt="Profile" className="w-full h-full object-cover" />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-black text-3xl font-bold">
+                    KT
+                  </div>
+                )}
               </div>
+              <button
+                onClick={() => setPhotoUploadOpen(true)}
+                className="absolute bottom-0 right-0 bg-yellow-400 text-black rounded-full p-2 shadow-lg hover:bg-yellow-500 transition-colors"
+                title="Change photo"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
+              </button>
             </div>
             
             {/* Company Name */}
@@ -812,6 +860,57 @@ export default function Home() {
         markdownUrl={editorDialog.markdownUrl}
         title={editorDialog.title}
       />
+
+      {/* Photo Upload Dialog */}
+      <Dialog open={photoUploadOpen} onOpenChange={setPhotoUploadOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>Update Profile Photo</DialogTitle>
+            <DialogDescription>
+              Upload a new profile photo for your resume and business card
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 mt-4">
+            {profilePhoto && (
+              <div className="flex justify-center">
+                <div className="w-32 h-32 rounded-full border-4 border-yellow-400 overflow-hidden">
+                  <img src={profilePhoto} alt="Current profile" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            )}
+            <div className="flex flex-col gap-3">
+              <label className="flex items-center justify-center gap-2 px-4 py-3 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 cursor-pointer transition-colors font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                </svg>
+                Choose Photo
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handlePhotoUpload}
+                  className="hidden"
+                />
+              </label>
+              {profilePhoto && (
+                <Button
+                  variant="outline"
+                  onClick={handleRemovePhoto}
+                  className="w-full border-red-400 text-red-600 hover:bg-red-50"
+                >
+                  Remove Photo
+                </Button>
+              )}
+              <Button
+                variant="outline"
+                onClick={() => setPhotoUploadOpen(false)}
+                className="w-full"
+              >
+                Cancel
+              </Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 mt-12">
