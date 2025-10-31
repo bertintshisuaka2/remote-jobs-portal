@@ -93,3 +93,9 @@
 - [x] Fix administrator login not working with PIN 7881
 - [x] Add notification feature for administrator to send messages to users
 
+
+
+## Current Issues
+- [ ] Fix checkpoint synchronization error: "failed to get checkpoint: record not found"
+- [ ] Fix admin login not functioning properly with PIN 7881
+
